@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu ngang</title>
+    <style>
+        #menu {
+            height: 20px;
+            width: 300px;
+            margin: 0;
+            background-color: rgb(237, 242, 242);
+            display: flex;
+        }
+        #menu li {
+            width: 80px;
+            height: 20px;
+            text-align: center;
+            background-color: aquamarine;
+            font-weight: bolder;
+            padding: 10px;
+            cursor: pointer;
+            list-style: none;
+        }
+        #menu li:hover {
+            background-color: blue;
+        }
+        #menu li:hover .sub-menu{
+            visibility: visible;
+        }
+        .sub-menu {
+            position: absolute;
+            top: 50px;
+            left: 10px;
+            list-style-type: none;
+            visibility: hidden;
+        }
+        #menu li:hover .sup-menu{
+            visibility: visible;
+        }
+        .sup-menu {
+            position: absolute;
+            top: 50px;
+            left: 70px;
+            list-style-type: none;
+            visibility: hidden;
+        }
+        #menu li:hover .su-menu{
+            visibility: visible;
+        }
+        .su-menu {
+            position: absolute;
+            top: 50px;
+            left: 130px;
+            list-style-type: none;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <ul id="menu">
+                <li>Sem 1
+                    <ul class="sub-menu">
+                        <li><a href=""></a>Đăng nhập</li>
+                        <li><a href=""></a>Đăng ký</li>
+                        <li><a href=""></a>Liên kết</li>
+                    </ul>
+                </li>
+                <li>Sem 2
+                    <ul class="sup-menu">
+                        <li><a href=""></a>project</li>
+                        <li><a href=""></a>progamming</li>
+                        <li><a href=""></a>system</li>
+                    </ul>
+                </li>
+                <li>Sem 3
+                    <ul class="su-menu">
+                        <li><a href=""></a>học code</li>
+                        <li><a href=""></a>bài tập</li>
+                        <li><a href=""></a>Dự án</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main></main>
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+}
+h3 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: red;
+}
+#cen-one {
+    width: 300px;
+    min-height: 100px;
+    padding: 40px;
+    position: absolute;
+    top: 380px;
+    left: 240px;
+}
+h3 {  
+    animation: name alternate 2s infinite;
+}
+@keyframes name {
+    from {font-size: 200%;}
+    to {font-size: 800%}
+}
+#cen-two {
+    width: 600px;
+    min-height: 100px;
+    padding: 40px;
+    position: absolute;
+    top: 380px;
+    left: 830px;
+}

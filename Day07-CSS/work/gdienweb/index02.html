@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frame work</title>
+    <style>
+        #body {
+            background-color: aliceblue;
+            width: 1400px;
+            margin: 10px;
+            padding: 0;
+        }
+        .head {
+            min-width: 1400px;
+            height: 60px;
+            margin: 0;
+            background-color: black;
+        }
+        #menu {
+            min-width: 100%;
+            display: inline-block;
+            list-style-type: none;
+            position: relative;
+        }
+        #menu-left p {
+            width: 140px;
+            height: 40px;
+            color: #f8f7f7;
+            float: left;
+            margin-left: 30px;
+            position: absolute;
+            top: 25px;
+        }
+        #menu ul, #menu li {
+            margin: 10px;
+            padding: 0;
+        }
+        #menu li {
+            width: 90px;
+            height: 50px;
+            color: #f8f7f7;
+            list-style: none;
+            float: right;
+            text-align: left;
+            display: block;
+        }
+        #menu ul ul{
+            display: block;
+            position: absolute;
+            top: 30px;
+            left: 15px;
+            visibility: hidden;
+        }
+        #menu ul ul li {
+            color: black;
+            background-color: #f8f7f7;
+            width: 70px;
+            height: 30px;
+            text-align: center;
+        }
+        #menu ul:hover li {
+            visibility: visible;
+        }
+        .first {
+            min-width: 50%;
+            height: 140px;
+            background-color: antiquewhite;
+            margin: 10px;
+            margin-bottom: 0;
+            padding: 50px;
+            text-align: center;
+            position: relative;
+        }
+        .link {
+            width: 160px;
+            height: 40px;
+            background-color: rgb(136, 226, 45);
+            border-radius: 10px;
+            position: absolute;
+            top: 140px;
+            right: 610px;
+        }
+        .get {
+            text-align: center;
+            color: #f4eaea;
+            list-style-type: none;
+            text-decoration: none;
+        }
+        h1 {
+            margin: 10px;
+            padding: 0;
+        }
+        h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            padding: 0;
+        }
+        p {
+            margin: 5px;
+            padding: 0;
+        }
+        .two {
+            min-width: 50%;
+            height: 280px;
+            background-color: rgb(255, 255, 255);
+            margin: 0px;
+            padding: 10px;
+            text-align: center;
+        }
+        .conten-left {
+            width: 400px;
+            height: 240px;
+            margin: 0;
+            margin-left: 70px;
+            padding: 10px 10px 5px 10px;
+            float: left;
+            text-align: left;
+            border-left: 1px solid rgb(217, 177, 77);
+            border-right: 1px solid rgb(217, 177, 77);
+            position: relative;
+        }
+        .conten-center {
+            width: 400px;
+            height: 240px;
+            margin: 0;
+            padding: 10px;
+            float: left;
+            text-align: left;
+            border-right: 1px solid rgb(217, 177, 77);
+            position: relative;
+        }
+        .conten-right {
+            width: 400px;
+            height: 240px;
+            margin: 0;
+            padding: 10px;
+            float: left;
+            text-align: left;
+            border-right: 1px solid rgb(217, 177, 77);
+            position: relative;
+        }
+        .library {
+            width: 140px;
+            height: 30px;
+            text-align: center;
+            margin: 0;
+            padding:0;
+            border: 1px solid rgb(39, 37, 37);
+            position: absolute;
+            top: 210px;
+            left: 20px;
+        }
+        .library-cen {
+            width: 140px;
+            height: 30px;
+            text-align: center;
+            margin: 0;
+            padding:0;
+            border: 1px solid rgb(39, 37, 37);
+            position: absolute;
+            top: 240px;
+            right: 20px;
+        }
+        .footer {
+            width: 100%;
+            height: 60px;
+            background-color: #f8f7f7;
+            text-align: center;
+        }
+    </style>
+</head>
+<body id="body">
+    <header class="head">
+        <div id="menu" >
+            <nav>
+                <ul>
+                    <li>Login
+                        <ul>
+                            <li>Login</li>
+                            <li>Register</li>
+                        </ul>
+                    </li>
+                    <li>Contact</li>
+                    <li>About</li>
+                    <li>Home</li> 
+                </ul>
+            </nav>
+        </div>
+        <div id="menu-left">
+            <p>My application</p>
+        </div>
+    </header>
+    <main>
+        <div class="first">
+            <h1>Congratulation!</h1>
+            <p>You have successfully created your Yii-powered appplication.</p>
+            <div class="link">
+                <a class="get" href="#" target="_blank">Get started with Yii</a>
+            </div>
+        </div>
+        <div class="two">
+            <div class="conten-left">
+                <h2><b>Heading</b></h2>
+                <p>Cậu bé nọ học việc trong một tiệm sửa xe đạp. Một ngày, có người khách đem đến một chiếc xe đạp hư. Cậu không những sửa lại cho thật tốt, mà còn lau chùi cho chiếc xe cho sạch đẹp.
+                    Những người học việc khác cười nhạo cậu bé dại dột, đã chẳng được thêm chút tiền công nào lại còn tốn sức.   
+                      Hai ngày sau, người khách trở lại, thấy chiếc xe đạp vừa tốt vừa đẹp như mới mua, liền đưa cậu bé về hãng của ông ta để làm việc với mức lương cao.</p>
+                <div class="library">
+                    <p>Yii documnetation</p>
+                </div>
+            </div>
+            <div class="conten-center">
+                <h2><b>Heading</b></h2>
+                <p>Chúng ta thường dễ dàng dính bẫy ổn định khi có công việc ổn định, mức thu nhập khá do đó không tập trung cho việc nỗ lực học tập và phát triển bản thân. Tuy nhiên, nếu điều này diễn ra và kéo dài sẽ khiến bạn trở nên lạc hậu, không theo kịp sự phát triển của thị trường lao động ngày một đông đảo và được đào tạo ngày càng bài bản cùng với sức ép cạnh tranh với lao động nước ngoài trong thời kỳ hội nhập. Do đó cần phải phấn đấu liên tục trong 5 năm đầu tiên của sự nghiệp và đánh giá bản thân liên tục 6-12 tháng/lần để có lộ trình phát triển rõ ràng.</p>
+                <div class="library-cen">
+                    <p>Yii exentions</p>
+                </div>
+            </div>
+            <div class="conten-right">
+                <h2><b>Heading</b></h2>
+                <p>Có mấy em bé rất muốn làm thiên thần; Thượng Đế cho mỗi em một chân đèn và dặn trong lúc chờ Ngài trở lại, hãy giữ cho mấy cái chân đèn luôn sáng bóng.
+                    Một ngày, hai ngày, rồi 1 tuần trôi qua, không thấy Thượng Đế quay trở lại. Tất cả các bé đều bỏ cuộc.     
+                    Chỉ có một em bé vẫn lau chùi chân đèn sáng bóng dù cho Thượng Đế không đến. Mọi người đều chê em dại.        
+                    Kết quả, chỉ có em được trở thành thiên thần.</p>
+                <div class="library">
+                    <p>Yii Forum</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>@2023 - Phát triển bởi IT Tokigawa Osakima</p>
+        </div>
+    </footer>
+</body>
+</html>

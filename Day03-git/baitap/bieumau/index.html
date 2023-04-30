@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>baitaphtmlform</title>
+</head>
+<body>
+		<form method="get" action="/pageone.php">
+		<table cellspacing="5" id="contact-font"  width="80%"></table>
+		<tr>
+			<td></td>
+			<td>Họ và tên:</td>
+			<td><input type="text" id="name" name="name"><br><br></td>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Phone:</td>
+			<td>
+				<input type="tel" id="phone" name="phone"><br><br>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Email:</td>
+			<td>
+				<input type="text" id="email" name="email"><br><br> 
+			</td>
+		</tr>
+			<td colspan="2">
+				<fieldset>
+					<legend>Phương tiện di chuyển của bạn là gì? </legend>
+					<input type="radio" name="taxi" value="car">Xe đạp<br><br>
+					<input type="radio" name="taxi" value="van">Xe máy<br><br>
+					<input type="radio" name="taxi" value="tiktok">Ô tô<br><br>
+				</fieldset>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<fieldset>
+					<legend>Nhóm máu của bạn là gì?</legend>
+					<input type="radio" name="hp" value="a">Nhóm máu A<br><br>
+					<input type="radio" name="hp" value="b">Nhóm máu B<br><br>
+					<input type="radio" name="hp" value="ab">Nhóm máu AB<br><br>
+					<input type="radio" name="hp" value="o">Nhóm máu O<br><br>
+				</fieldset><br>
+			</td>
+		</tr>
+				<label for="date">Pickup Date/Time:</label>
+		<input type="date" id="datemin" name="datemin" min="1990-12-31"><br><br>
+		<label for="Place">Bạn bao nhiêu tuổi </label>
+			<select name="number">
+			<option value="one">Select one</option>
+		</select>
+		<p>Bạn sống ở đâu <input list="browsers">
+		<datalist id="browsers">
+			<option value="Internet Explorer"></option>
+		</datalist></p>
+		<p>Chiều cao, cân nặng của bạn là <textarea cols="20" rows="2"></textarea></p><br>
+		<input type="submit" value="Send to">
+	</table>
+	</form>
+</body>
+</html>

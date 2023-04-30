@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animevui</title>
+    <style>
+      body {
+        background-color: aliceblue;
+        margin: 5px;
+      }
+	  header {
+        background-color: rgb(195, 237, 237);
+        width: 100%;
+		position: fixed;
+		top: 0;
+      }
+      .container {
+        max-width: 100%;
+        margin: 0 30px 0 30px;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        justify-items: center;
+      }
+      ul li {
+        list-style: none;
+      }
+      #logo img {
+        max-width: 120px;
+        height: 60px;
+      }
+      #main-menu {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      #main-menu li {
+        position: relative;
+      }
+      #main-menu li a {
+        color: blue;
+        display: block;
+        padding: 20px 20px;
+        text-decoration: none;
+      }
+      #main-menu ul.sub-menu {
+        position: absolute;
+        top: 63px;
+        background-color: rgb(196, 205, 217);
+        padding: 0;
+        width: 120px;
+        display: none;
+      }
+      #main-menu li:hover > ul.sub-menu {
+        display: block;
+      }
+      #main-menu ul.sub-menu a {
+        padding: 8px 16px;
+        border-bottom: 1px solid black;
+        left: 0;
+      }
+      #main-menu ul.sub-menu li:hover > a {
+        border-bottom: 1px solid rgb(237, 94, 99);
+      }
+      #main-menu ul.sub-menu li:last-child a {
+        border: none;
+      }
+      #main-menu ul.sub-menu ul.sub-menu {
+        width: 100px;
+        left: 121px;
+        top: 0px;
+      }
+      #main-menu > li > a {
+        position: relative;
+      }
+      /* Thiết lập border khi hover */
+      #main-menu > li > a::before {
+        content: "";
+        height: 4px;
+        width: 0px;
+        background: red;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+      /* khi hover vào li trong main-menu sẽ tác động hiển thị a*/
+      #main-menu > li:hover > a::before {
+        width: 100%;
+      }
+      #main-menu .sub-menu li:hover > a {
+        color: rgb(239, 60, 60);
+      }
+      h2 {
+        margin-top: 5px;
+        margin-left: 15px;
+      }
+      h4 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      p {
+        margin: 10px 10px 5px 5px;
+      }
+      .film p {
+        margin-top: 0;
+      }
+      div h3 {
+        font-size: 140%;
+        text-align: center;
+        margin-top: 5px;
+        color: red;
+      }
+
+      #main {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .first {
+        min-width: 100%;
+        background-color: rgb(244, 247, 249);
+        margin-top: 90px;
+        margin-bottom: 0;
+        height: 540px;
+      }
+      .video {
+        width: 58%;
+        min-height: 440px;
+        float: left;
+        margin: 5px 5px 5px 10px;
+        padding-left: 30px;
+      }
+      .repmin {
+        width: 30%;
+        min-height: 460px;
+        background-color: rgb(233, 247, 242);
+        float: left;
+        margin: 5px 5px 5px 10px;
+        padding: 5px;
+      }
+      .table {
+        min-width: 90%;
+        min-height: 440px;
+        background-color: azure;
+        border: 1px solid black;
+        margin: 3px 10px 0px 5px;
+        padding: 0;
+      }
+      .table p {
+        margin-bottom: 40px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid black;
+      }
+      .two {
+        min-width: 100%;
+        background-color: rgb(251, 251, 251);
+        margin-top: 0px;
+        margin-bottom: 5px;
+        height: 500px;
+      }
+      .review {
+        width: 50%;
+        min-height: 450px;
+        background-color: rgb(242, 247, 247);
+        float: left;
+        margin: 0px 5px 5px 10px;
+        padding: 5px;
+      }
+      p img {
+        min-width: 200px;
+        min-height: 260px;
+        margin-right: 20px;
+        margin-left: 20px;
+        float: left;
+      }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .film {
+        width: 48%;
+        height: 450px;
+        border-top: 1px solid rgb(192, 139, 35);
+        margin: 0;
+        float: left;
+        overflow-y: scroll;
+        overflow-x: hidden;
+      }
+      .film-left {
+        width: 320px;
+        height: 180px;
+        margin-left: auto;
+        margin-right: auto;
+        float: left;
+      }
+      .film-right {
+        width: 320px;
+        height: 180px;
+        margin-left: auto;
+        margin-right: auto;
+        float: left;
+      }
+      #foter {
+        width: 100%;
+        height: 60px;
+        border-top: 1px solid burlywood;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="menu-left">
+        <nav class="container">
+          <a href="https://vuigher.com/" id="logo" target="_blank">
+            <img src="../filetep/fun.png" alt="example.com"
+          /></a>
+          <ul id="main-menu">
+            <li>
+              <a href="">Anime</a>
+              <ul class="sub-menu">
+                <li><a href="">Hành động</a></li>
+                <li>
+                  <a href="">Học đường</a>
+                  <ul class="sub-menu">
+                    <li><a href="">Menu 1</a></li>
+                    <li><a href="">Menu 2</a></li>
+                    <li><a href="">Menu 3</a></li>
+                    <li><a href="">Menu 4</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Phiêu lưu</a></li>
+                <li><a href="">Viễn tưởng</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">Movie</a>
+              <ul class="sub-menu">
+                <li><a href="">Menu 3.2.1</a></li>
+                <li><a href="">Menu 3.2.2</a></li>
+                <li><a href="">Menu 3.2.3</a></li>
+                <li><a href="">Menu 3.2.4</a></li>
+              </ul>
+            </li>
+            <li><a href="">Ưu đãi</a></li>
+            <li><a href="">BXH</a></li>
+            <li><a href="">Đăng nhập</a></li>
+            <li><a href="">Đăng ký</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div id="main">
+        <div class="first">
+          <div class="video">
+            <iframe
+              width="800"
+              height="420"
+              src="../filetep/onepiece.mp4"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <h2>ONE PIECE FILM RED</h2>
+            <p>285,514 lượt xem</p>
+          </div>
+          <div class="repmin">
+            <div class="table">
+              <h4>Bình luận</h4>
+              <p>
+                <textarea cols="45" rows="4"></textarea><br /><br />
+                <input type="submit" value="Gửi" />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="two">
+          <div class="review">
+            <div class="clearfix">
+              <p>
+                <img src="../filetep/onepiece.jpg" alt="example.com" />Thể loại:
+                Hành Động - Hài Hước - Phiêu Lưu - Giả Tưởng <br /><br />
+                Bối cảnh One Piece Film Red diễn ra ở hòn đảo âm nhạc Elegia,
+                nơi diva nổi tiếng bậc nhất thế giới tên Uta thực hiện buổi biểu
+                diễn trực tiếp đầu tiên trước công chúng. Uta đứng trên sân khấu
+                với một ước mơ giản dị rằng ” Âm nhạc của tôi sẽ khiến cho thế
+                giới hạnh phúc”. Đằng sau hình ảnh cô ca sĩ sở hữu giọng hát
+                được đánh giá là ở “Đẳng cấp hoàn toàn khác” là một thân thế vô
+                cùng bí ẩn được che giấu. Băng hải tặc Mũ Rơm và các fan khác
+                của Uta từ nhiều thế lực khác nhau như hải tặc lẫn hải quân đều
+                đã cùng tề tựu về buổi biểu diễn này. Biến cố bắt đầu ngay khi
+                sự thật kinh hoàng được tiết lộ rằng Uta chính là “con gái của
+                Shanks”. Luffy và Uta lần đầu tiên hội ngộ sau lần gặp gỡ vào 12
+                năm trước tại Làng Foosha.
+              </p>
+            </div>
+          </div>
+          <div class="film">
+            <h3>PHIM HOT TRONG TUẦN</h3>
+            <div class="film-left">
+              <p><b>Suzume</b> - 212,324 lượt xem</p>
+              <p>
+                <iframe
+                  width="300"
+                  height="150"
+                  src="https://www.youtube.com/embed/8QkS6hxAAik"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </p>
+            </div>
+            <div class="film-right">
+              <p><b>Your name</b> - 198,254 lượt xem</p>
+              <p>
+                <iframe
+                  width="300"
+                  height="150"
+                  src="https://www.youtube.com/embed/qNPswNUfWI8"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </p>
+            </div>
+            <div class="film-left">
+              <p><b>Dáng hình thanh âm</b> - 151,653 lượt xem</p>
+              <iframe
+                width="300"
+                height="150"
+                src="https://www.youtube.com/embed/G3Ri-lY9TdY"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="film-right">
+              <p><b>Boruto</b> - 123,861 lượt xem</p>
+              <iframe
+                width="300"
+                height="150"
+                src="https://www.youtube.com/embed/1lTfCg6y958"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="film-left">
+              <p><b>Thanh gươm diệt quỷ Season2</b> - 158.698 lượt xem</p>
+              <iframe
+                width="300"
+                height="150"
+                src="https://www.youtube.com/embed/uST5wFsjUjg"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="film-right">
+              <p><b>Đấu phá thương khung P5</b> - 365,987 lượt xem</p>
+              <iframe
+                width="300"
+                height="150"
+                src="https://www.youtube.com/embed/ecywu3WnQcc"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div id="foter">
+        <h4>@2023 - Phát triển web animevui bởi Togawa Shouki</h4>
+        <p>Trang web chính: vuighe.net</p>
+      </div>
+    </footer>
+  </body>
+</html>

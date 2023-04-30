@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background-color: antiquewhite;
+    position: relative;
+}
+#vitri {
+    position: absolute;
+    top: 400px;
+    left: 600px;
+}
+.heart {
+    animation: animate alternate 1s infinite;
+}
+.heart-you {
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    background-color: rgb(199, 31, 31);
+    transform: rotate(45deg);
+    box-shadow: 0 0 40px rgb(236, 101, 101);
+}
+.heart-you::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgb(199, 31, 31);
+    transform: rotate(45deg);
+    box-shadow: 0 0 40px rgb(236, 101, 101);
+    position: absolute;
+    top: 0;
+    left: -50%;
+}
+.heart-you::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgb(199, 31, 31);
+    transform: rotate(45deg);
+    box-shadow: 0 0 40px rgb(236, 101, 101);
+    position: absolute;
+    top: -50%;
+    left: 0;
+}
+@keyframes animate {
+    0% {
+        transform: scale(1);       
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}

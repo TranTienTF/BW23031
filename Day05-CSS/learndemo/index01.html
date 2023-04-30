@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style>
+        .demobox {
+            background-color: aquamarine;
+            width: 200px;
+            padding: 35px;
+            border: 25px rgb(148, 41, 41) dashed;
+            margin: auto;
+        }
+        /*box model 2*/
+        .cricle {
+            width: 80px;
+            box-shadow: inset 0 0 20px rgb(233, 168, 168);
+            padding: 35px;
+            border-radius: 50%;
+        }
+        .cricle .vuong {
+            padding: 50px 25px;
+            background-color: rgb(139, 213, 189);
+        }
+        /*box model 3*/
+        .rect {
+            border: 5px black solid;
+            padding: 35px 30px;
+            border-radius: 6px;
+        }
+        .rect .left {
+            border: 5px yellow;
+            padding: 30px 60px;
+            border-radius: 30px;
+            display: inline;
+        }
+        .rect .right {
+            border: 5px rgb(91, 189, 213);
+            padding: 30px 60px;
+            margin-left: -10px;
+            border-radius: 30px;
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div class="contanier">
+        <div class="demobox">
+            <p>Content demo box</p>
+        </div>
+        <!--box model 2-->
+        <dv class="shank">
+            <div class="cricle">
+                <div class="vuong">
+                </div>
+            </div>
+        </dv><br>
+        <!--box model 3-->
+        <div class="rect">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </div>
+</body>
+</html>

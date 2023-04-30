@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>danhsachcss</title>
+    <style>
+        .drink {
+            background-color: rgb(226, 240, 81);
+            list-style-type: square;
+        }
+        .drink li:nth-child(2n) {
+            background-color: rgb(0, 255, 255);
+        }
+    </style>
+    <style>
+        #custom tr td, #custom tr th {
+            border: 1px solid rgb(186, 20, 20);
+        }
+        #custom {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        #custom tr td:nth-child(2){
+            text-align: center;
+        }
+        #custom tr th {
+            background-color: aqua;
+        }
+        #custom tr:nth-child(even){
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <ul class="drink">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Coaca-Cola</li>
+            <li>Soda mocha</li>
+        </ul><br>
+        <table id="custom">
+            <tr>
+                <th>Họ và tên</th>
+                <th>Ngày sinh</th>
+                <th>Quê quán</th>
+            </tr>
+            <tr>
+                <td>Nguyễn Văn Sáng</td>
+                <td>27 - 10 -1989</td>
+                <td>Hưng yên</td>
+            </tr>
+            <tr>
+                <td>Nguyễn Công Thành</td>
+                <td>02 - 5 - 1997</td>
+                <td>Hải phòng</td>
+            </tr>
+            <tr>
+                <td>Lê Tự Tiến</td>
+                <td>21 - 8 - 1992</td>
+                <td>Hà Nam</td>
+            </tr>
+            <tr>
+                <td>Trần Văn Hải</td>
+                <td>17 - 9 - 1991</td>
+                <td>Hà Nội</td>
+            </tr>
+            <tr>
+                <td>Nguyễn Thị Mai Như</td>
+                <td>30 - 5 - 1999</td>
+                <td>Tuyên Quang</td>
+            </tr>
+        </table>
+    </main>
+    <footer></footer>
+</body>
+</html>
