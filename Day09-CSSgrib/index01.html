@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thi nghiem</title>
+    <style>
+       .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        background-color: aliceblue;
+        padding: 15px;
+       }
+       .navbar a {
+        text-decoration: none;
+        color: rgb(61, 86, 213);
+       }
+       .logo {
+        margin-right: 50px;
+       }
+       .list {
+        list-style: none;
+        display: flex;
+       }
+       #menu_content,
+       .navbar label {
+            display: none;
+       }
+       @media screen and (max-width: 600px) {
+            .menu {
+                width: 100%;
+                max-height: 0;
+                overflow: hidden;
+            }
+            .list {
+                flex-direction: column;
+                padding: 20px;
+                align-items: center;
+            }
+            .navbar label {
+                display: inline-flex;
+                align-items: center;
+                cursor: pointer;
+            }
+            #menu_content:checked ~ .menu {
+                max-height: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">LOGO</a>
+        <input type="checkbox" id="menu_content">
+        <label for="menu_content"><i class="ri-menu-line">ICON</i></label>
+        <div class="menu">
+            <ul class="list">
+                <li><a href="http://" target="_blank">Tác giả</a></li>
+                <li><a href="http://" target="_blank">Biểu tượng</a></li>
+                <li><a href="http://" target="_blank">Chú thích</a></li>
+                <li><a href="http://" target="_blank">Hướng dẫn</a></li>
+                <li><a href="http://" target="_blank">Thông tin</a></li>
+            </ul>
+        </div>  
+    </nav>
+</body>
+</html>
