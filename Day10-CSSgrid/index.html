@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai tap mot</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: 60px 600px 60px;
+            grid-gap: 10px;
+        }
+        .header,
+        .footer {
+            background-color: aqua;
+            grid-column: 1/9;
+        }
+        .main {
+            grid-column: 1/3;
+            background-color: rgb(219, 211, 211);
+        }
+        .content {
+            grid-column: 3/7;
+            background-color: rgb(208, 196, 65);
+        }
+        .slidebar {
+            grid-column: 7/9;
+            background-color: rgb(219, 211, 211);
+        }
+        .text {
+            font-size: 140%;
+            font-weight: bolder;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header text">Header</div>
+        <div class="main text">Main</div>
+        <div class="content text">Content</div>
+        <div class="slidebar text">Slide back</div>
+        <div class="footer text">Footer</div>
+    </div>
+</body>
+</html>

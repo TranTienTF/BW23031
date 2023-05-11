@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai tap second</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        [class*="col-"] {
+            float: left;
+            padding: 5px;
+        }
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .container {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(12, 8.33%);
+            grid-template-rows: 60px 600px 60px;
+            grid-row-gap: 5px;
+        }
+        .header {
+            grid-column: 1/13;
+            background-color: rgb(236, 111, 111);
+        }
+        .content {
+            grid-column: span 9;
+            background-color: rgb(63, 212, 63);
+        }
+        .slidebar {
+            grid-column: 10/13;
+            background-color: rgb(83, 167, 212);
+        }
+        .footer {
+            grid-column: 1/13;
+            background-color: rgb(220, 213, 85);
+        }
+        .text {
+            font-size: 140%;
+            font-weight: bolder;
+            text-align: center;
+        }
+        @media only screen and (max-width: 600px){
+            .container {
+            grid-template-rows: 60px 150px 450px 60px;
+            }
+            .slidebar {
+            grid-column: 1/13;
+            grid-row: 2;
+            }
+            .content {
+            grid-column: 1/13;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="container">
+            <div class="header text">Header</div>
+            <div class="content text col-10">Content</div>
+            <div class="slidebar text col-2">Slide back</div>
+            <div class="footer text">Footer</div>
+        </div>
+    </div>
+</body>
+</html>
