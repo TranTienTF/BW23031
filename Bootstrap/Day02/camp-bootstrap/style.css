@@ -1,0 +1,14 @@
+body {
+  /* background-color: black; */
+}
+img {
+  z-index: 100;
+}
+.carousel-inner {
+  overflow: unset;
+}
+header {
+  /* text-decoration: ; */
+
+  z-index: 1000;
+}

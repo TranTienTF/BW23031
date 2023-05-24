@@ -142,18 +142,19 @@ footer {
     background-color: rgb(229, 217, 201);
 }
 .ads >div {
-    width: 40%;
-    height: 4rem;
-    padding: 1rem;
+    width: 80%;
+    height: 6rem;
+    margin: 0 2rem;
     border-radius: 1rem;
     font-size: 100%;
     text-align: center;
+    background-color: rgb(201, 200, 200);
 }
 .block_one {
-    background-color: blueviolet;
+    padding: 2.2rem 3rem;
 }
 .block_two {
-    background-color: rgb(176, 15, 15);
+    padding: 2.2rem 3rem;
 }
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}

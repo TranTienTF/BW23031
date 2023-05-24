@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/Bootstrap/cssbootrap/bootstrap-5.3.0/css/bootstrap.min.css"/>
+    <script src="/Bootstrap/cssbootrap/bootstrap-5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+    <title>dang nhap ca do</title>
+    <style>
+      a {
+        color: white;
+      }
+      div > a {
+        text-decoration: none;
+        color: rgb(50, 198, 55);
+      }
+      div > a:hover {
+        color: rgb(230, 50, 50);
+      }
+      .bgroud {
+        isolation: isolate;
+        position: relative;
+      }
+      .bgroud::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+        opacity: 0.7;
+        background-image: url("/castudy/logo/scocre.png");
+        background-size: cover;
+        background-position: center;
+      }
+      .masthead {
+        min-height: fit-content;
+        color: rgb(14, 14, 14);
+        text-shadow: 2px 2px 2px rgb(43, 42, 42, 0.2);
+      }
+      .color-overlay {
+        max-width: 30rem;
+        max-height: fit-content;
+        background-color: rgba(23, 22, 22, 0.3);
+        color: white;
+        border-radius: 15px;
+      }
+      .input-text {
+        background: none;
+      }
+      .font-size {
+        font-size: 90%;
+      }
+    </style>
+  </head>
+  <body class="bgroud">
+    <header></header>
+    <main>
+      <div class="masthead row d-flex flex-column mb-3">
+        <div class="m-3 p-md-3 col-6 align-self-center text-center">
+          <h3>ĐẶT CƯỢC TẤT TAY VẬN MAY WIN LỚN</h3>
+        </div>
+        <div
+          class="color-overlay col-10 col-sm-9 d-flex flex-column align-self-center p-md-5 px-4 py-5">
+          <div class="align-self-center mb-2">
+            <h4>Login Now</h4>
+          </div>
+          <form action="php.co" method="get" class="text-center">
+            <!-- Email input -->
+            <div class="form-floating form-group mb-md-3 mb-3">
+              <input type="email" id="floatingInput" class="form-control input-text" placeholder="name"/>
+              <label for="floatingInput" style="color: black">
+                Email address &nbsp;<i class="fa-solid fa-user"></i>
+              </label>
+            </div>
+            <!-- Password input -->
+            <div class="form-floating mb-3">
+              <input type="password" id="form2Example2" class="form-control input-text" placeholder="Password"/>
+              <label for="form2Example2" style="color: black">
+                Password &nbsp;<i class="fa-solid fa-unlock"></i>
+              </label>
+            </div>
+            <!-- 2 column grid layout for inline styling -->
+            <div class=" row mb-4">
+              <!-- Simple link -->
+              <div class="col d-flex justify-content-center font-size">
+                <div class="col align-self-center">
+                  Forgot password?<br/>
+                  <a href="#!">Click here</a>
+                </div>
+              </div>
+              <div class="col font-size">
+                New user?
+                <a href="#!">Register here</a>
+              </div>
+            </div>
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4 col-3">Login</button>
+            <!-- Register buttons -->
+            <div class="text-center">
+              <p>or sign up with:</p>
+              <button type="button" class="btn btn-outline-primary btn-floating mx-1">
+                <a href="http://example.com" target="_blank">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </button>
+              <button type="button" class="btn btn-outline-success btn-floating mx-1">
+                <a href="http://example.com" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-google"></i>
+                </a>
+              </button>
+              <button type="button" class="btn btn-outline-info btn-floating mx-1">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </button>
+              <button type="button" class="btn btn-outline-danger btn-floating mx-1">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-github"></i>
+                </a>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="p-3 col align-self-center text-center">
+        <p>@2023 Clean Login B88. All rights | Design by Director Mr.T</p>
+      </div>
+    </footer>
+  </body>
+</html>
