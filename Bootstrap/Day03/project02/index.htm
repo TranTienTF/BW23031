@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Bootstrap/cssbootrap/bootstrap-5.3.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="little.css">
+	<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="/Bootstrap/cssbootrap/bootstrap-5.3.0/js/bootstrap.min.js"></script>
+    <title>adminLTE</title>
+</head>
+<body>
+    <div class="container-fluid">
+		<div class="row">
+			<div class="col-xl-2 d-none d-xl-block menu_left offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+				<input type="checkbox" hidden id="call-side" />
+				<div class="offcanvas-header border-bottom p-2">
+				  <h4 class="offcanvas-title w-100 text-end" id="offcanvasScrollingLabel">AdminLTE 3</h4>
+				  <button type="button" class="btn-close text-reset d-block d-md-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body">
+					<div class="user-name border-bottom py-3">
+						<i class="fas fa-user-circle fa-2xl"></i>&ensp;
+						<a href="#" class="text-decoration-none text-black">Username</a>
+					</div>
+					<div class="input-group mb-3 py-3">
+						<input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+						<span class="input-group-text bg-body" id="basic-addon1"><i class="fas fa-search"></i></span>
+					</div>
+				</div>
+			</div>
+			<div class="contact_page col col-xl-10">
+				<nav class="navbar-nav head py-2">
+					<div class="container-fluid d-flex">
+						<button class="border border-0 bg-body" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fa-solid fa-bars fa-xl"></i></button>
+					  	<div class="">
+							<ul class="nav">
+						  	<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">Home</a>
+						  	</li>
+						  	<li class="nav-item">
+								<a class="nav-link" href="#">Contact</a>
+						  	</li>
+							</ul>
+					  </div>
+					</div>
+				</nav>
+				<div class="content">
+					<section id="dash-board">
+					  <div class="title d-flex justify-content-between">
+						<h3>DashBoard</h3>
+						<span><a href="#">Home</a>/ Dashboard v1</span>
+					  </div>
+					  <div class="row shopping-bag row-cols-2 row-cols-lg-4">
+						<!-- item 1 -->
+						<div class="col shopping-bag">
+						  <div class="bag bg-purple">
+							<div class="detail">
+							  <div class="number">150</div>
+							  <a href="#">New Orders</a>
+							</div>
+							<i class="fas fa-shopping-bag i-bag"></i>
+							<div class="info">
+							  <a href="#">
+								More info
+								<i class="far fa-arrow-alt-circle-right"></i>
+							  </a>
+							</div>
+						  </div>
+						</div>
+						<!-- item 2 -->
+						<div class="col shopping-bag">
+						  <div class="bag bg-yellow">
+							<div class="detail">
+							  <div class="number">150</div>
+							  <a href="#">New Orders</a>
+							</div>
+							<i class="fas fa-shopping-bag i-bag"></i>
+							<div class="info">
+							  <a href="#">
+								More info
+								<i class="far fa-arrow-alt-circle-right"></i>
+							  </a>
+							</div>
+						  </div>
+						</div>
+						<!-- item 3 -->
+						<div class="col shopping-bag">
+						  <div class="bag bg-pink">
+							<div class="detail">
+							  <div class="number">150</div>
+							  <a href="#">New Orders</a>
+							</div>
+							<i class="fas fa-shopping-bag i-bag"></i>
+							<div class="info">
+							  <a href="#">
+								More info
+								<i class="far fa-arrow-alt-circle-right"></i>
+							  </a>
+							</div>
+						  </div>
+						</div>
+						<!-- item 4 -->
+						<div class="col shopping-bag">
+						  <div class="bag bg-blue">
+							<div class="detail">
+							  <div class="number">150</div>
+							  <a href="#">New Orders</a>
+							</div>
+							<i class="fas fa-shopping-bag i-bag"></i>
+							<div class="info">
+							  <a href="#">
+								More info
+								<i class="far fa-arrow-alt-circle-right"></i>
+							  </a>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</section>
+					<!-- Bảng data -->
+					<section id="statistical" class="d-lg-flex">
+						<div class="recent-sale">
+							<table>
+							  <tr>
+								<h3>Recent Sale</h3>
+							  </tr>
+							  <tr>
+								<td>Product name</td>
+								<td>Category</td>
+								<td>Quantity</td>
+								<td>Price</td>
+								<td>Total</td>
+							  </tr>
+							  <tr>
+								<td>Name 1</td>
+								<td>Category 1</td>
+								<td>Quantity 1</td>
+								<td>Price 1</td>
+								<td>Total 1</td>
+							  </tr>
+							  <tr>
+								<td>Name 1</td>
+								<td>Category 1</td>
+								<td>Quantity 1</td>
+								<td>Price 1</td>
+								<td>Total 1</td>
+							  </tr>
+							  <tr>
+								<td>Name 1</td>
+								<td>Category 1</td>
+								<td>Quantity 1</td>
+								<td>Price 1</td>
+								<td>Total 1</td>
+							  </tr>
+							  <tr>
+								<td>Name 1</td>
+								<td>Category 1</td>
+								<td>Quantity 1</td>
+								<td>Price 1</td>
+								<td>Total 1</td>
+							  </tr>
+							  <tr>
+								<td>Name 1</td>
+								<td>Category 1</td>
+								<td>Quantity 1</td>
+								<td>Price 1</td>
+								<td>Total 1</td>
+							  </tr>
+							</table>
+						</div>
+						<div class="recent-add">
+							<table>
+							  <tr>
+								<h3>Recent Add</h3>
+							  </tr>
+							  <tr>
+								<td>Product name</td>
+								<td>Category</td>
+								<td>Quantity</td>
+							  </tr>
+							  <tr>
+								<td>Product name</td>
+								<td>Category</td>
+								<td>Quantity</td>
+							  </tr>
+							  <tr>
+								<td>Product name</td>
+								<td>Category</td>
+								<td>Quantity</td>
+							  </tr>
+							  <tr>
+								<td>Product name</td>
+								<td>Category</td>
+								<td>Quantity</td>
+							  </tr>
+							  <tr>
+								<td>Product name</td>
+								<td>Category</td>
+								<td>Quantity</td>
+							  </tr>
+							  <tr>
+								<td>Product name</td>
+								<td>Category</td>
+								<td>Quantity</td>
+							  </tr>
+							</table>
+						</div>
+					<!-- Ti le % -->
+					</section>
+					<section id="total" class="row row-cols-lg-4 flex-wrap gx-0">
+					  <div class="col total-item">
+						<p class="color-blue">
+						  <i class="fa fa-caret-up"></i>
+						  17%
+						</p>
+						<p>$35,210.43</p>
+						<p>total Revenue</p>
+					  </div>
+					  <div class="col total-item">
+						<p class="color-yellow">
+						  <i class="fa fa-caret-up"></i>
+						  17%
+						</p>
+						<p>$35,210.43</p>
+						<p>total cost</p>
+					  </div>
+					  <div class="col total-item">
+						<p class="color-blue">
+						  <i class="fa fa-caret-up"></i>
+						  17%
+						</p>
+						<p>$35,210.43</p>
+						<p>total profit</p>
+					  </div>
+					  <div class="col total-item border-0">
+						<p class="color-red">
+						  <i class="fa fa-caret-up"></i>
+						  17%
+						</p>
+						<p>$35,210.43</p>
+						<p>GOAL COMPLETIONS</p>
+					  </div>
+					</section>
+				</div>
+				<div class="footer mt-4 py-3 border-top">
+					<h6>Copy @ 2014-2021 AdminLTE.io. All rights reserved</h6>
+				</div>
+			</div>
+		</div>
+    </div>
+</body>
+</html>

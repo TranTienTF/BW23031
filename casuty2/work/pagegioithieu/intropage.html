@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/casuty2/css/bootstrap5.3/css/bootstrap.min.css">
+    	<link rel="stylesheet" href="/casuty2/css/little.css">
+		<link rel="stylesheet"
+      		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      		crossorigin="anonymous"
+      		referrerpolicy="no-referrer"/>
+		<script src="../css/bootstrap5.3/js/bootstrap.bundle.min.js"></script>
+		<title>finushouse/Gioithieu</title>
+		<style>
+			#contact-review {
+				background-image: url(/casuty2/file/noithat/searchs/bgroup6.png);
+				background-size: cover;
+				height: 22vw;
+			}
+			h1 {
+				font-size: calc(100% + 2.8vw);
+			}
+			#search-shop {
+				background-image: url(/casuty2/file/noithat/searchs/899461.png);
+				height: 30vw;
+				background-size: cover;
+			}
+			.search-shop,
+			h1 {
+				top: 35%;
+				left: 42%;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="fixed-top">
+				<div class="head">
+					<nav class="navbar navbar-expand">
+						<div class="container-lg">
+							<a class="navbar-brand d-flex py-0" href="#">
+								<img src="/casuty2/file/Greta-logo.svg" width="90px" height="60px" alt="logopage">
+								<div class="name-logoweb d-none d-lg-block">
+									<div class="name-logo fw-bolder fs-4 ">
+										<span><i>INTERIOR</i></span>
+										<span class="name-logo-des"><i>DESIGN</i></span>
+									</div>
+									<div class="name-logo">
+										BEAUTIFUL ROOM EVERYONE
+									</div>
+								</div>
+							</a>
+							<div class="search-login-sp d-flex">
+								<form class="d-flex search position-relative">
+									<div class="search-input">
+										<input type="text" placeholder="Tìm kiếm..." name="text" class="input">
+										<svg fill="#000000" width="20px" height="20px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+										  <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
+										  </svg>	
+									</div>					  
+								</form>
+								<a href="example.com" class="px-3 text-decoration-none">
+									<img src="/casuty2//file/Frame140.svg" alt="search">
+								</a>
+								<a href="example.com" class="text-decoration-none">
+									<img src="/casuty2//file/Frame141.svg" alt="login">
+								</a>
+							</div>
+						</div>
+					</nav>
+				</div>
+				<div class="menu pt-0">
+					<nav class="navbar py-1 navbar-expand-lg" id="navbar">
+						<div class="container-lg justify-content-end justify-content-md-center">
+							  <button class="btn btn-light p-1 d-md-none d-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+								<span class="navbar-toggler-icon" data-bs-target="#offcanvasWithBothOptions"></span>
+							</button>
+							  <div class="offcanvas-md offcanvas-start bg-dracula menu_left" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+								  aria-labelledby="offcanvasWithBothOptionsLabel">
+								<div class="offcanvas-header">
+									<h4 class="offcanvas-title logotext-color" id="offcanvasWithBothOptionsLabel">FINUS HOUSE</h4>
+									<button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+								</div>
+								<div class="offcanvas-body ">
+									<ul class="nav flex-column flex-md-row flex-grow-1">
+										<li class="nav-item hover-tabmenu">
+											 <a class="nav-link text-start text-xl-center px-2" aria-current="page" href="../index.html">Trang chủ</a>
+										   </li>
+										<li class="nav-item hover-tabmenu">
+											<a class="nav-link text-start text-xl-center px-2 mx-md-2" aria-current="page" href="../pagegioithieu/intropage.html">Giới thiệu</a>
+										</li>
+										<li class="nav-item dropdown hover-tabmenu">
+											<a class="nav-link text-start text-xl-center ps-2 pe-0 px-lg-2" href="#"
+													id="navbarDropdown" type="button" data-bs-toggle="dropdown" data-hover="dropdown" aria-expanded="false">
+													Mẫu phòng
+											</a>
+											<ul class="dropdown-menu mt-1" aria-labelledby="navbarDropdown">
+												<li><a class="dropdown-item w-100" href="#">Phòng khách</a></li>
+												<li><a class="dropdown-item w-100" href="#">Phòng ngủ</a></li>
+												<li><a class="dropdown-item w-100" href="#">Phòng bếp</a></li>
+												<li><a class="dropdown-item w-100" href="#">Không gian đẹp</a></li>
+											</ul>
+										</li>
+										<li class="nav-item dropdown hover-tabmenu">
+											<a class="nav-link text-start text-xl-center px-2 px-xl-0 px-md-2 mx-md-3" href="#"
+													id="navbarDropdownSP" role="button" data-bs-toggle="dropdown" data-hover="dropdown" aria-expanded="false">
+													Sản phẩm
+											</a>
+											<ul class="dropdown-menu mt-1" aria-labelledby="navbarDropdownSP">
+												<li><a class="dropdown-item w-100" href="#">Tủ Rượu</a></li>
+												<li><a class="dropdown-item w-100" href="#">Giường</a></li>
+												<li><a class="dropdown-item w-100" href="#">Sofa Bộ</a></li>
+												<li><a class="dropdown-item w-100" href="#">Sofa Góc, Sofa Băng</a></li>
+												<li><a class="dropdown-item w-100" href="#">Bàn Trà Sofa</a></li>
+												<li><a class="dropdown-item w-100" href="#">Kệ Tivi</a></li>
+												<li><a class="dropdown-item w-100" href="#">Bàn Làm Việc</a></li>
+												<li><a class="dropdown-item w-100" href="#">Tủ Quần Áo</a></li>
+												<li><a class="dropdown-item w-100" href="#">Nội Thất Gia Đình</a></li>
+											</ul>
+										</li>
+										<li class="nav-item hover-tabmenu">
+											<a class="nav-link text-start text-xl-center px-2" aria-current="page" href="#">Tuyển dụng</a>
+										</li>
+										<li class="nav-item hover-tabmenu">
+											<a class="nav-link text-start text-xl-center px-2 mx-md-2" href="../pagelienhe/contact.html">Liên hệ</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="homepage-contact">
+				<section id="contact-review" class="position-relative opacity-75">
+					<h1 class="text-black fw-bold position-absolute">Giới thiệu</h1>
+				</section>
+			</div>
+			<div class="container-lg p-3">
+				<section id="intro-content">
+					<div class="video-intro text-center">
+						<video class="w-75" autoplay loop muted>
+							<source src="/casuty2/file/noi that/searchs/Finus-House.mp4" type="video/mp4" />
+						</video>
+					</div>
+					<div class="history">
+						<div class="row my-4">
+							<div class="col-12 col-lg-7 col-xxl-8 alignment">
+								<p><a href="../index.html">Nội Thất Finus House</a>
+									thành lập ngày 06/10/2012, là thành viên của Công ty Hòa phát. Đến nay, qua 10 năm thành lập và phát triển Nội thất Finus ngày càng lớn mạnh và đang dần khẳng định được vị thế trên thị trường sản xuất nội thất hàng đầu tại Việt Nam.
+								</p>
+								<p>
+									Năm 2020, Nội thất Finus House đánh dấu bước phát triển cả về quy mô và tầm vóc với việc đầu tư hàng loạt các thiết bị sản xuất tân tiến mới tại cơ sở sản xuất nội thất. Chiến lược kinh doanh được công ty thay đổi phù hợp và linh hoạt với từng giai đoạn, đảm bảo độ bao phủ toàn bộ thị trường bằng tất cả các sản phẩm trong giai đoạn phát triển khi công ty bước vào giai đoạn “xu hướng hiện đại 4.0 tiến tới 5.0”. Với  2 chi nhánh trên cả nước, Nội thất Finus House luôn chú trọng đầu tư theo chiến lược trọng điểm, vững chắc và hiệu quả. Các trang thiết bị hiện đại từ Nhật Bản, Italia, Đức, Đài Loan, các dây chuyền sản xuất của Công ty được đánh giá là dây chuyền sản xuất nội thất hiện đại nhất của Việt Nam hiện nay như: dây chuyền mạ, dây chuyền sơn tĩnh điện, hệ thống máy CNC, máy cắt, máy đột dập, máy uốn ống, máy cưa tự động và hệ thống máy chế biến và sản xuất đồ gỗ ..v.v. Với phương châm “Đổi mới hiện đại phù hợp với sức khỏe cuộc sống” gắn liền trong các hoạt động sản xuất và kinh doanh và phân định nhiệm vụ, thị trường rõ ràng, Công ty cung cấp và trợ giúp tư vấn thiết kế về mặt kỹ thuật cho các gia đình, văn phòng làm việc hay khu nhà ở cao cấp vào các công trình, dự án. Đây là điểm khác biệt của Nội Thất Finus House nhằm đảm bảo tối đa quyền lợi của khách hàng, tăng sự gắn bó đoàn kết giữa đại lý và công ty để cùng phát triển lớn mạnh. Nội thất Finus House đã xây dựng được hệ thống đại lý phân phối chuyên nghiệp ở 16 tỉnh thành.
+								</p>
+								<p>
+									Để có được vị thế là nhà sản xuất Nội thất hàng đầu tại Việt Nam, Công ty xác định “sản phẩm và chất lượng” là giá trị cốt lõi để làm nên thành công của doanh nghiệp. Sự đa đạng về sản phẩm, mẫu thiết kế bố trí nội thất và không ngừng sáng tạo, sản phẩm nội thất Finus đã có mặt ở khắp nơi, từ các công trình lớn như: Tập đoàn Viettel, ngân hàng Viettinbank, ngân hàng Techcombank, Trung tâm hành chính Nha Trang, Trường đại học Công nghệ Hà nội,… và các văn phòng hiện đại đều được trang bị các sản phẩm mang thương hiệu Nội thất Finus House.
+								</p>
+							</div>
+							<din class="col-12 col-lg-5 col-xxl-4 text-center">
+								<img src="/casuty2/file/noithat/searchs/142536.jpg" alt="" class="img-fluid">
+							</din>
+						</div>
+						<div class="row row-gap-3">
+							<div class="col-12 col-lg-6 alignment">
+								<p>
+									<b>Các dòng sản phẩm chính của công ty:</b><br>
+									- Bàn tủ văn phòng, nhà ở cao cấp làm từ gỗ sơn PU, gỗ lim, gỗ pơ-mu, gỗ gụ,...<br>
+									- Bàn tủ làm từ gỗ công nghiệp<br>
+									- Ghế xoay văn phòng<br>
+									- Vách ngăn văn phòng hiện đại, sang trọng thiết kế theo diện tích và đặc điểm mặt bằng<br>
+									- Bàn làm việc, mô hình bàn kệ để nhiều vi tính (cho văn phòng làm việc công ty)<br>
+									- Tủ đựng rượu tiện nghi<br>
+									- Các sản phẩm gia đình làm từ gỗ tự nhiên, bàn ghế Sofa da/nỉ cho văn phòng và gia đình.<br>
+									- Các sản phẩm phục vụ công trình công cộng: Ghế phòng chờ, nhà ga, sân bay, bệnh viện, các loại ghế hội trường, ghế sân vận động<br>
+									- Các loại sản phẩm phục vụ cho nội thất công trình làm từ gỗ, sắt,vải, mút, nhựa, Inox: Bàn ghế, tủ bếp, cửa, cầu thang...<br>
+								</p>
+							</div>
+							<div class="col-12 col-lg-6 text-center">
+								<img src="/casuty2/file/noithat/searchs/36528741.jpg" alt="" class="img-fluid">
+							</div>
+							<div class="col alignment">
+								<p>
+									Để có được vị thế và thành công trên thị trường trong nhiều năm qua, Nội thất Finus House đã luôn nhận được sự ủng hộ của khách hàng và người tiêu dùng bình chọn là Nội thất thiết kế dẫn đầu xu thế hiện đại mới trong 2 năm liền 2020-2021 và là một trong 500 công ty tư nhân lớn nhất Việt nam. Với tầm nhìn và định hướng phát triển của mình trong tương lai, Nội thất Finus House đang ngày càng sáng tạo và hoàn thiện các sản phẩm để đáp lại sự tin cậy của khách hàng và cộng đồng những “sản phẩm và dịch vụ tốt nhất”.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="intro-image">
+					<div class="text-center py-2">
+						<img src="/casuty2/file/noi that/searchs/Rectangle86.png" alt="cửa hàng" class="img-fluid">
+					</div>
+				</section>
+				<section id="intro-contact">
+					<div class="contact-head text-center">
+						<h4 class="fw-bold">NỘI THẤT FINUS HOUSE - KHÔNG GIAN CUỘC SỐNG RIÊNG BẠN</h4>
+					</div>
+					<div class="contact-foot">
+						<p>
+							Địa chỉ: Số 86 Lê Thanh Nghị - Quận Cầu Giấy - TP. Hà Nội
+						</p>
+						<p>
+							Hottline: 0987.25.63.58
+						</p>
+						<p>
+							Fax: 0234.9875624
+						</p>
+						<h5 class="fw-semibold ms-sm-3 ms-md-5 py-2 my-0">Cơ sở thiết kế phân phối sản phẩm nội thất Finus House</h5>
+						<p>
+							Phòng bán hàng: 0234.6842547 - 0894.678.686
+						</p>
+						<p>
+							Website: <a href="index.html" class="active">http://www.fustinohouse.com.vn</a>
+						</p>
+					</div>
+				</section>
+			</div>
+			<div class="searchs">
+				<section id="search-shop" class="position-relative text-center">
+					<div class="position-absolute search-shop">
+						<h3 class="text-light fw-bold">Xem, chạm và cảm nhận</h3>
+						<a href="" class="btn btn-outline-light fw-bold border py-2 px-4 fs-5">Tìm cửa hàng</a>
+					</div>
+				</section>
+			</div>
+		</main>
+		<footer>
+			<div class="middle-footer py-2 px-3 px-sm-0 px-md-5 px-lg-0">
+				<div class="container-lg">
+					  <div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 footer-click">
+							<div class="foo-contact">
+								<h5 class="border-bottom pb-2">FUINUS HOUSE</h5>
+								<div class="footer-detail rte mb-2">
+								Với kinh nghiệm hơn 10 năm trong ngành nội thất, Finus House
+								tự hào là cung cấp những mẫu sản phẩm nội thất tốt nhất Việt
+								Nam.
+								</div>
+								<ul class="list-type-none list-group">
+									<li>
+									<i class="fa fa-map-marker" aria-hidden="true"></i>
+									<span class="p-2">Số 86 Lê Thanh Nghị, Q.Cầu Giấy, TP. Hà Nội</span>
+									</li>
+									<li>
+									<i class="fa fa-phone" aria-hidden="true"></i>
+									<a href="tel:19006750" title="Điện thoại" class="text-light p-2"> Hottline: 0987.25.63.58</a>
+									</li>
+									<li>
+									<i class="fa fa-envelope" aria-hidden="true"></i>
+									<a href="mailto:support@sapo.vn" title="Email" class="text-light p-2">fustinushouse@yahoo.com</a>
+									</li>
+								</ul>
+								<ul class="social-media d-flex my-3">
+									<li class="rounded-circle text-center bg-primary">
+										<a href="https://www.facebook.com/" title="facebook"
+											class="social-media-icon">
+											<i class="fab fa-facebook-f text-light"></i>
+										</a>
+									</li>
+									<li class="mx-3 rounded-circle text-center bg-info">
+										<a href="https://twitter.com/" title="facebook" class="facebook">
+											<i class="fab fa-twitter text-light"></i>
+										</a>
+									</li>
+									<li class="rounded-circle text-center bg-success">
+										<a href="https://vn.google.com/" title="facebook" class="facebook">
+											<i class="fab fa-google text-light"></i>
+										</a>
+									</li>
+									<li class="mx-3 rounded-circle text-center bg-danger">
+										<a href="https://vn.youtube.com/" title="facebook" class="facebook">
+											<i class="fab fa-youtube text-light"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-12 col-lg-8">
+							  <div class="row">
+								<div class="col-lg-4 col-md-4 col-sm-4 col-6 footer-click">
+									  <h5 class="border-bottom pb-2 ">DANH MỤC</h5>
+									  <ul class="toggle-mn list-group">
+										<li>
+											  <a class="ef" href="../index.html" title="Trang chủ">Trang chủ</a>
+										</li>
+										<li>
+											  <a class="ef" href="../pagegioithieu/intropage.html" title="Giới thiệu">Giới thiệu</a>
+										</li>	
+										<li>
+											  <a class="ef" href="/collections/all" title="Sản phẩm">Sản phẩm</a>
+										</li>	
+										<li>
+											  <a class="ef" href="/tin-tuc" title="Tin tức">Tin tức</a>
+										</li>
+										<li>
+											  <a class="ef" href="../pagelienhe/contact.html" title="Liên hệ">Liên hệ</a>
+										</li>
+									  </ul>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4 col-6 footer-click">
+									  <h5 class="border-bottom pb-2">THÔNG TIN</h5>
+									  <ul class="toggle-mn list-group">
+										<li>
+											  <a class="ef" href="/" title="Tủ rượu">Tất cả sản phẩm</a>
+										</li>
+										<li>
+											<a class="ef" href="/" title="Giường">Nội thất phòng khách</a>
+										  </li>
+										<li>
+											<a class="ef" href="/" title="Sofa Bộ">Nội thất phòng ngủ</a>
+										</li>
+										<li>
+											<a class="ef" href="/" title="Sofa Góc, Sofa Băng">Nội thất phòng bếp</a>
+										</li>
+										<li>
+											<a class="ef" href="/" title="Kệ Tivi">Nội thất thông minh</a>
+										</li>									
+									  </ul>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 footer-click">
+									<h5 class="border-bottom pb-2 mt-3 mt-sm-0">CHÍNH SÁCH</h5>
+									<ul class="toggle-mn list-group">
+										<li>
+											<a class="ef" href="/" title="thanh toán">Chính sách thanh toán</a>
+										</li>
+										<li>
+											<a class="ef" href="/" title="vận chuyển">Chính sách vận chuyển</a>
+										</li>
+										<li>
+											<a class="ef" href="/" title="bảo hành">Chính sách bảo hành</a>
+										</li>
+										<li>
+											<a class="ef" href="/" title="đổi trả">Chính sách đổi trả</a>
+										</li>
+										<li>
+											<a class="ef" href="/" title="bảo mật">Chính sách bảo mật</a>
+										</li>
+									</ul>
+								  </div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mt-3 mt-sm-4 footer-click payment">
+									<h5 class="cliked">Thanh toán</h5>
+									<ul class="toggle-mn d-flex ps-0">
+										<li>
+											<a href="#" title="ND Nội Thất">
+												<img
+												class="lazy img-responsive center-block loaded"
+												src="//bizweb.dktcdn.net/100/369/704/themes/741072/assets/image_payment_1.jpg?1677115735837"
+												data-src="//bizweb.dktcdn.net/100/369/704/themes/741072/assets/image_payment_1.jpg?1677115735837"
+												alt="ND Nội Thất">
+											</a>
+										</li>	
+										<li class="mx-2">
+											<a href="#" title="ND Nội Thất">
+											<img
+												class="lazy img-responsive center-block loaded"
+												src="//bizweb.dktcdn.net/100/369/704/themes/741072/assets/image_payment_2.jpg?1677115735837"
+												data-src="//bizweb.dktcdn.net/100/369/704/themes/741072/assets/image_payment_2.jpg?1677115735837"
+												alt="ND Nội Thất"/>
+											</a>
+										</li>	
+										<li>
+											<a href="#" title="ND Nội Thất">
+												<img
+												class="lazy img-responsive center-block loaded"
+												src="//bizweb.dktcdn.net/100/369/704/themes/741072/assets/image_payment_3.jpg?1677115735837"
+												data-src="//bizweb.dktcdn.net/100/369/704/themes/741072/assets/image_payment_3.jpg?1677115735837"
+												alt="ND Nội Thất"/>
+											</a>
+										</li>	
+										<li class="mx-2">
+											<a href="#" title="ND Nội Thất">
+												<img
+												class="lazy img-responsive center-block loaded"
+												src="//bizweb.dktcdn.net/100/369/704/themes/741072/assets/image_payment_4.jpg?1677115735837"
+												data-src="//bizweb.dktcdn.net/100/369/704/themes/741072/assets/image_payment_4.jpg?1677115735837"
+												alt="ND Nội Thất"/>
+											</a>
+										</li>	
+										<li>
+											<a href="#" title="ND Nội Thất">
+												<img
+												class="lazy img-responsive center-block loaded"
+												src="//bizweb.dktcdn.net/100/369/704/themes/741072/assets/image_payment_5.jpg?1677115735837"
+												data-src="//bizweb.dktcdn.net/100/369/704/themes/741072/assets/image_payment_5.jpg?1677115735837"
+												alt="ND Nội Thất"/>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 my-3 mt-sm-4 footer-click customer">
+									<h5 class="cliked">Đăng ký nhận tin</h5>			  
+									<form action="https://sapo.co" method="post"
+										id="mc-embedded-subscribe-form"
+										name="mc-embedded-subscribe-form"
+										target="_blank">
+										<div class="input-group click-register">
+												<input type="email"	name="EMAIL" id="mail"	
+												placeholder="Nhập email của bạn..."	
+												aria-label="general.newsletter_form.newsletter_email"
+												  required="" class="form-control"/>
+												<button class="button-submit" value="Đăng ký" type="submit">Đăng ký</button>
+										</div>	
+									</form>
+								</div>
+							</div>
+						  </div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

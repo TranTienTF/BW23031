@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url("../font/Source_Sans_Pro/SourceSansPro-Regular.ttf");
+}
+@font-face {
+    font-family: 'Francois';
+    src: url("../font/Francois_One/FrancoisOne-Regular.ttf");
+}
+:root {
+    --bgsoothing: #dff9fb;
+    --bgdracula: #353B48;
+    --bgyellower: #E9BF12;
+    --bgquacam: #f8571d;
+    --color: #1dd1a1;
+    --bgflashwhite: #f1f2f6;
+    --bsgradient-orange: linear-gradient(to left,#DD1829,#FCC419);
+}
+.alignment {
+    text-align: justify;
+}
+* {
+    font-family: 'Source Sans Pro', sans-serif ;
+}
+/* Phan header web */
+header ul.nav a {
+    color: var(--bgyellower);
+    font-weight: 600;
+}
+.name-logo-des {
+    color: var(--bgyellower);
+}
+header ul.nav>li>a {
+    position: relative;
+}
+header ul.nav>li>a::before {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: var(--bgyellower);
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+header ul.nav>li:hover>a::before {
+    width: 100%;
+}
+header ul.nav>li:hover>a {
+    color: white;
+}
+.bg-dracula {
+    --bs-bg-opacity: 1;
+    background-color: var(--bgdracula) !important;
+  }
+.head {
+    background-color: var(--bgsoothing);
+}
+.head .navbar {
+    padding: 0.25rem 0;
+}
+/* thanh search */
+.input {
+    width: 150px;
+    padding: 10px 0px 10px 40px;
+    border-radius: 9999px;
+    border: solid 1px #333;
+    transition: all .2s ease-in-out;
+    outline: none;
+    opacity: 0.8;
+}
+.search-input {
+    line-height: 0.7rem;
+}
+.search-input svg {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+} 
+.input:focus {
+    opacity: 1;
+    width: 250px;
+}
+.menu {
+    background-color: var(--bgdracula);
+}
+.name-logo {
+    font-family: 'Francois', sans-serif;
+    color: #0d0d0e;
+    font-size: 70%;
+}
+.name-logoweb {
+    height: 50px;
+}
+.logotext-color {
+    color: var(--bgyellower);
+    font-family: 'Francois', sans-serif;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+.dropdown>.dropdown-toggle:active {
+      pointer-events: none;
+}
+/* set offcanvas menu bên trái */
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+    .menu .menu_left {
+        width: 48vw;
+    }
+}
+/* header */
+/* phan main */
+/* section review */
+#reviewsp,
+.homepage-contact,
+#homepage-intro, #name-product {
+    margin-top: 110px;
+}
+
+/* section nổi bật */
+.sp-button {
+    width: 26px;
+}
+.card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(138, 136, 136, 0.15);
+}
+.productSale {
+    width: 50px;
+    height: 60px;
+    background-image: url(../file/iconsale.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.button-flashsale {
+    width: 40px;
+}
+#bannersale .bannersalebig {
+    color: #ed9fa6;
+    font-size: calc(100% + 10em);
+}
+/* set button click buy, see */
+.button-click-buy {
+    padding: 0.2em 0.5em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 15px;
+    border: 1px solid;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+}
+.button-click-buy::before, .button-click-buy::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 0.8s ease;
+}
+.button-click-buy::before {
+    top: -1em;
+    left: -1em;
+}
+.button-click-buy::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+}
+.button-click-buy:hover::before, .button-click-buy:hover::after {
+    height: 200px;
+    width: 200px;
+}
+.button-click-buy:hover {
+    color: rgb(10, 25, 30);
+}
+.button-click-buy:active {
+    filter: brightness(.8);
+}
+.timesale {
+    width: 24em;
+}
+
+/* Phan footer */
+footer {
+    background-color: var(--bgdracula);
+    color: white;
+}
+ul li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+ul.social-media li {
+    width: 36px;
+    height: 36px;
+    padding: 0.4rem;
+}
+ul.toggle-mn li a {
+    color: white;
+}
+ul.toggle-mn li a:hover {
+    color: #E9BF12;
+}
+/* ô button input nhap email*/
+.click-register input{
+    min-height: 2.5em;
+    max-width: 15em;
+    padding: 0 1rem;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #5e4dcd;
+    border-radius: 6px 0 0 6px;
+    background-color: transparent;
+}
+.button-submit {
+    padding: .5em 1em;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    background-color: #5e4dcd;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+.button-submit:hover {
+    background-color: #5e5dcd;
+}
+.click-register input:focus, .click-register input:focus-visible {
+    border-color: #3898EC;
+    outline: none;
+}
