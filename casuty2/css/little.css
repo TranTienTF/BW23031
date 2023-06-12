@@ -7,12 +7,14 @@
     src: url("../font/Francois_One/FrancoisOne-Regular.ttf");
 }
 :root {
-    --bgsoothing: #dff9fb;
+    --bgsoothing: #BBFFFE;
     --bgdracula: #353B48;
     --bgyellower: #E9BF12;
     --bgquacam: #f8571d;
-    --color: #1dd1a1;
+    --color: #ff5d22;
     --bgflashwhite: #f1f2f6;
+    --bsbluezone: #f5f5fa;
+    --bsbluechill: #1e90ff;
     --bsgradient-orange: linear-gradient(to left,#DD1829,#FCC419);
 }
 .alignment {
@@ -51,13 +53,14 @@ header ul.nav>li:hover>a {
 .bg-dracula {
     --bs-bg-opacity: 1;
     background-color: var(--bgdracula) !important;
-  }
+}
 .head {
     background-color: var(--bgsoothing);
 }
 .head .navbar {
     padding: 0.25rem 0;
 }
+
 /* thanh search */
 .input {
     width: 150px;
@@ -81,6 +84,7 @@ header ul.nav>li:hover>a {
     opacity: 1;
     width: 250px;
 }
+/* thanh search */
 .menu {
     background-color: var(--bgdracula);
 }
@@ -96,12 +100,6 @@ header ul.nav>li:hover>a {
     color: var(--bgyellower);
     font-family: 'Francois', sans-serif;
 }
-.dropdown:hover>.dropdown-menu {
-    display: block;
-}
-.dropdown>.dropdown-toggle:active {
-      pointer-events: none;
-}
 /* set offcanvas menu bên trái */
 @media only screen and (min-width: 500px) and (max-width: 768px) {
     .menu .menu_left {
@@ -111,18 +109,64 @@ header ul.nav>li:hover>a {
 /* header */
 /* phan main */
 /* section review */
-#reviewsp,
-.homepage-contact,
+#register .form-group label,
+#login-up .form-group label {
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    transition-duration: 0.5s;
+    pointer-events: none;
+}
+#register .form-group input,
+#login-up .form-group input {
+    outline: none;
+    border: 1px solid var(--bgflashwhite);
+}
+#register .form-group input:focus,
+#login-up .form-group input:focus {
+    border: 1px solid var(--bsbluechill); 
+}
+#register .form-group input:focus + label,
+#login-up .form-group input:focus + label {
+    top: 0px;
+    font-size: 85%;
+    color: var(--bsbluechill);
+}
+#login-up,
+.main-bannerhmone,
+.homepage-contact, .main-bannersell ,
 #homepage-intro, #name-product {
     margin-top: 110px;
 }
 
 /* section nổi bật */
-.sp-button {
-    width: 26px;
+.carousel-control-prev, .carousel-control-next {
+    background-color: var(--bgflashwhite);
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    transition: translateY(-50%);
+}
+.carousel-button-left {
+    left: -20px;
+}
+.carousel-button-right {
+    right: -20px;
+}
+.button-click-buy:not(:first-child) {
+    display: none;
+    
 }
 .card:hover {
     box-shadow: 0 0.5rem 1rem rgba(138, 136, 136, 0.15);
+}
+.card:hover .button-click-buy {
+    display: block;
+    transition: all 0.75s ease-in-out;
+}
+#customer-reviews .customer-reviews-bg {
+    background-image: url(../file/noithat/searchs/background_danhgia.png);
+    background-size: cover;
 }
 .productSale {
     width: 50px;
@@ -131,6 +175,10 @@ header ul.nav>li:hover>a {
     background-size: contain;
     background-repeat: no-repeat;
 }
+.time-item {
+    width: 70px;
+    height: 70px;
+}
 .button-flashsale {
     width: 40px;
 }
@@ -138,56 +186,27 @@ header ul.nav>li:hover>a {
     color: #ed9fa6;
     font-size: calc(100% + 10em);
 }
-/* set button click buy, see */
-.button-click-buy {
-    padding: 0.2em 0.5em;
-    background-color: transparent;
-    border-radius: .3em;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    transition: .5s;
-    font-weight: 400;
-    font-size: 15px;
-    border: 1px solid;
-    text-transform: uppercase;
-    color: var(--color);
-    z-index: 1;
+#bannersale .bannersalebig {
+    top: 5%;
+    left: 10%;
 }
-.button-click-buy::before, .button-click-buy::after {
+#bannersale .bannersalesmall {
+    top: 30%;
+    left: 35%;
+}
+#bannercontent .banner-main .banner-item:hover img {
+    transform: scale(1.02);
+}
+#showroom-wrap .showroom-wrap-right::before {
     content: '';
-    display: block;
-    width: 50px;
-    height: 50px;
-    transform: translate(-50%, -50%);
     position: absolute;
-    border-radius: 50%;
-    z-index: -1;
-    background-color: var(--color);
-    transition: 0.8s ease;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0), #fff);   
 }
-.button-click-buy::before {
-    top: -1em;
-    left: -1em;
-}
-.button-click-buy::after {
-    left: calc(100% + 1em);
-    top: calc(100% + 1em);
-}
-.button-click-buy:hover::before, .button-click-buy:hover::after {
-    height: 200px;
-    width: 200px;
-}
-.button-click-buy:hover {
-    color: rgb(10, 25, 30);
-}
-.button-click-buy:active {
-    filter: brightness(.8);
-}
-.timesale {
-    width: 24em;
-}
-
+/* set button click buy, see */
 /* Phan footer */
 footer {
     background-color: var(--bgdracula);
@@ -215,18 +234,12 @@ ul.toggle-mn li a:hover {
     min-height: 2.5em;
     max-width: 15em;
     padding: 0 1rem;
-    color: #fff;
     font-size: 15px;
     border: 1px solid #5e4dcd;
-    border-radius: 6px 0 0 6px;
     background-color: transparent;
 }
 .button-submit {
-    padding: .5em 1em;
-    border: none;
-    border-radius: 0 6px 6px 0;
     background-color: #5e4dcd;
-    color: #fff;
     font-size: 15px;
     cursor: pointer;
     transition: background-color .3s ease-in-out;
@@ -236,5 +249,4 @@ ul.toggle-mn li a:hover {
 }
 .click-register input:focus, .click-register input:focus-visible {
     border-color: #3898EC;
-    outline: none;
 }

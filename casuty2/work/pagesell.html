@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap5.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/little.css">
+	<link rel="stylesheet"
+      	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      	integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      	crossorigin="anonymous"
+      	referrerpolicy="no-referrer"/>
+	<script src="../css/bootstrap5.3/js/bootstrap.bundle.min.js"></script>
+	<style>
+		main {
+			background: var(--bsbluezone);
+		}
+		#main-banner-all {
+			background-image: url(../file/noithat/searchs/banner10.png);
+			background-size: cover;
+			padding: 6vw 0;
+		}
+		#main-category input {
+			width: 20px;
+			height: 20px;
+		}
+		.main-category-color button {
+			width: 30px;
+			height: 30px;
+		}
+		.fs-10 {
+			font-size: 90%;
+		}
+		#main-arrange .main-arrange-body .product-item {
+			width: calc(100%/4);
+			padding: 10px 10px;
+		}
+		@media only screen and (min-width: 768px) and (max-width: 992px) {
+			#main-arrange .main-arrange-body .product-item {
+				width: calc(100%/3);
+			}	
+		}
+		@media only screen and (max-width: 767px) {
+			#main-arrange .main-arrange-body .product-item {
+				width: calc(100%/2);
+			}
+		}
+	</style>
+	<script>
+        /* modal */
+        var myModal = document.getElementById('myModal')
+        var myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', function () {
+        myInput.focus()
+        })
+    </script>
+    <title>finushouse/tat ca san pham</title>
+</head>
+<body>
+    <header>
+		<div class="fixed-top">
+			<div class="head">
+				<nav class="navbar navbar-expand">
+					<div class="container-lg">
+						<a class="navbar-brand d-flex py-0" href="./index.html">
+							<img src="../file/Greta-logo.svg" width="90px" height="60px" alt="logopage">
+							<div class="name-logoweb d-none d-lg-block">
+								<div class="name-logo fw-bolder fs-4 ">
+									<span><i>INTERIOR</i></span>
+									<span class="name-logo-des"><i>DESIGN</i></span>
+								</div>
+								<div class="name-logo">
+									BEAUTIFUL ROOM EVERYONE
+								</div>
+							</div>
+						</a>
+						<div class="search-login-sp d-flex">
+							<form class="d-flex search position-relative">
+								<div class="search-input">
+									<input type="text" placeholder="Tìm kiếm..." name="text" class="input">
+									<svg fill="#000000" width="20px" height="20px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+									  <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
+									  </svg>	
+								</div>					  
+							</form>
+							<a href="example.com" class="px-3 text-decoration-none" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+								<img src="../file/Frame140.svg" alt="giỏ hàng">
+							</a>
+							<a class="text-decoration-none" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+								<img src="../file/Frame141.svg" alt="login-register">
+							</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<div class="menu pt-0">
+				<nav class="navbar py-1 navbar-expand-lg" id="navbar">
+					<div class="container-lg justify-content-end justify-content-md-center">
+						  <button class="btn btn-light p-1 d-md-none d-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+							<span class="navbar-toggler-icon" data-bs-target="#offcanvasWithBothOptions"></span>
+						</button>
+						  <div class="offcanvas-md offcanvas-start bg-dracula menu_left" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+							  aria-labelledby="offcanvasWithBothOptionsLabel">
+							<div class="offcanvas-header">
+								<h4 class="offcanvas-title logotext-color" id="offcanvasWithBothOptionsLabel">FINUS HOUSE</h4>
+								<button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+							</div>
+							<div class="offcanvas-body ">
+								<ul class="nav flex-column flex-md-row flex-grow-1">
+									<li class="nav-item hover-tabmenu">
+										 <a class="nav-link text-start text-xl-center px-2" aria-current="page" href="./index.html">Trang chủ</a>
+									   </li>
+									<li class="nav-item hover-tabmenu">
+										<a class="nav-link text-start text-xl-center px-2 mx-md-2" aria-current="page" href="./intropage.html">Giới thiệu</a>
+									</li>
+									<li class="nav-item dropdown hover-tabmenu">
+										<a class="nav-link text-start text-xl-center ps-2 pe-0 px-lg-2" href="#"
+												id="navbarDropdown" type="button" data-bs-toggle="dropdown" data-hover="dropdown" aria-expanded="false">
+												Mẫu phòng
+										</a>
+										<ul class="dropdown-menu mt-1" aria-labelledby="navbarDropdown">
+											<li><a class="dropdown-item w-100" href="#">Phòng khách</a></li>
+											<li><a class="dropdown-item w-100" href="#">Phòng ngủ</a></li>
+											<li><a class="dropdown-item w-100" href="#">Phòng bếp</a></li>
+											<li><a class="dropdown-item w-100" href="#">Không gian đẹp</a></li>
+										</ul>
+									</li>
+									<li class="nav-item dropdown hover-tabmenu">
+										<a class="nav-link text-start text-xl-center px-2 px-xl-0 px-md-2 mx-md-3" href="./pagesell.html"
+												id="navbarDropdownSP" role="button" data-bs-toggle="dropdown" data-hover="dropdown" aria-expanded="false">
+												Sản phẩm
+										</a>
+										<ul class="dropdown-menu mt-1" aria-labelledby="navbarDropdownSP">
+											<li><a class="dropdown-item w-100" href="./pagesell.html">Tủ Rượu</a></li>
+											<li><a class="dropdown-item w-100" href="./pagesell.html">Giường</a></li>
+											<li><a class="dropdown-item w-100" href="./pagesell.html">Sofa Bộ</a></li>
+											<li><a class="dropdown-item w-100" href="./pagesell.html">Sofa Góc, Sofa Băng</a></li>
+											<li><a class="dropdown-item w-100" href="./pagesell.html">Bàn Trà Sofa</a></li>
+											<li><a class="dropdown-item w-100" href="./pagesell.html">Kệ Tivi</a></li>
+											<li><a class="dropdown-item w-100" href="./pagesell.html">Bàn Làm Việc</a></li>
+											<li><a class="dropdown-item w-100" href="./pagesell.html">Tủ Quần Áo</a></li>
+											<li><a class="dropdown-item w-100" href="./pagesell.html">Nội Thất Gia Đình</a></li>
+										</ul>
+									</li>
+									<li class="nav-item hover-tabmenu">
+										<a class="nav-link text-start text-xl-center px-2" aria-current="page" href="#">Tuyển dụng</a>
+									</li>
+									<li class="nav-item hover-tabmenu">
+										<a class="nav-link text-start text-xl-center px-2 mx-md-2" href="./contact.html">Liên hệ</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main>
+		<!-- bảng form register -->
+		<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <!-- button điều khiển -->
+                        <ul class="nav nav-pills nav-justified my-3" role="tablist">
+                            <li class="nav-item me-1" role="presentation">
+                                <button class="btn btn-outline-primary w-100" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                                    Đăng nhập
+                                </button>
+                            </li>
+                            <li class="nav-item ms-1" role="presentation">
+                                <button class="btn btn-primary w-100">
+                                    Đăng ký
+                                </button>
+                            </li> 
+                        </ul>
+                        <!-- form điền thông tin -->
+                        <div class="tab-content text-center">
+                            <form id="register" class="" action="login" method="post" name="login-form" target="_blank" novalidate>
+                                <p class="status"></p>
+                                <div class="text-center mb-3">
+                                <div class="register-internet">
+                                    <div class="text-black fs-5">Kết nối với:</div>
+                                    <div class="wp-social-login-provider-list mt-3">
+                                        <a rel="nofollow" href="#" title="Kết nối với Facebook"  data-provider="Facebook" role="button">
+                                            <span class="px-3 py-2 rounded-3 bg-primary shadow"><i class="fab fa-facebook-f text-light"></i></span>
+                                        </a>
+                                        <a rel="nofollow" href="#" title="Kết nối với Google" data-provider="Google" role="button">
+                                            <span class="px-3 py-2 rounded-3 bg-success shadow mx-3"><i class="fab fa-google text-light"></i></span>
+                                        </a>
+                                        <a rel="nofollow" href="" title="Kết nối với Twitter" data-provider="Twitter" role="button">
+                                            <span class="px-3 py-2 rounded-3 bg-info shadow"><i class="fab fa-twitter text-light"></i></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                </div>
+                                <p class="text-center text-black">hoặc:</p>
+                                <!-- input điền thông tin-->
+                                <div class="form-group position-relative">
+                                    <input type="text" id="your_name" class="w-100 ps-2 py-2 rounded-3" required/>
+                                    <label class="position-absolute py-1 bg-body" for="your_name">Tên của bạn</label>
+                                </div>
+								<div class="form-group position-relative my-3">
+                                    <input type="text" id="your_name" class="w-100 ps-2 py-2 rounded-3" required/>
+                                    <label class="position-absolute py-1 bg-body" for="your_name">Tên người dùng của bạn</label>
+                                </div>
+                                <div class="form-group position-relative">
+                                    <input type="email" id="your_name" class="w-100 ps-2 py-2 rounded-3" required/>
+                                    <label class="position-absolute py-1 bg-body" for="your_name">Email</label>
+                                </div>
+                                <div class="form-group position-relative my-3">
+                                    <input type="password" id="your_name" class="w-100 ps-2 py-2 rounded-3" required/>
+                                    <label class="position-absolute py-1 bg-body" for="your_name">Mật khẩu</label>
+                                </div>
+								<div class="form-group position-relative">
+                                    <input type="password" id="your_name" class="w-100 ps-2 py-2 rounded-3" required/>
+                                    <label class="position-absolute py-1 bg-body" for="your_name">Nhập lại mật khẩu</label>
+                                </div>
+                                <!-- footer form -->
+                                <div class="form-check d-flex justify-content-center text-black mt-3 mb-2">
+                                    <input type="checkbox" class="form-check-input me-1" id="newsletter" name="newsletter" value="subscribe">
+                                    <label class="form-check-label fs-6" for="newsletter">Tôi đồng ý đăng ký nhận thông báo và bản tin tài khoản thành viên</label>
+                                </div>
+                                <!-- Subscribe checkbox -->
+                                <div class="form-text text-center small text-muted mb-4 text-black ">
+                                    Bằng cách đăng ký, bạn đồng ý để trở thành khách hàng của chúng tôi và sẽ được nhận mọi thông tin ưu đãi từ Finus House. Quản trị viên dữ liệu theo 
+                                    <a target="_blank" href="example.com">
+                                        Chính sách quyền riêng tư
+                                    </a>
+                                </div>
+                                <button class="btn btn-primary btn-block mb-3 px-4" id="register" type="submit" value="SIGNUP">
+                                    Đăng ký
+                                </button>
+                            </form>                      
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-primary px-4" data-bs-dismiss="modal" aria-label="Close">
+                            Đóng
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <!-- bảng form login -->
+        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <!-- button điều khiển -->
+                        <ul class="nav nav-pills nav-justified my-3" role="tablist">
+                            <li class="nav-item me-1" role="presentation">
+                                <button class="btn btn-primary w-100" aria-selected="false">
+                                    Đăng nhập
+                                </button>
+                            </li>
+                            <li class="nav-item ms-1" role="presentation">
+                                <button class="btn btn-outline-primary w-100" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                                    Đăng ký
+                                </button>
+                            </li> 
+                        </ul>
+                        <!-- form điền thông tin -->
+                        <div class="tab-content text-center">
+                            <form id="login-up" action="login" method="post" name="login-form">
+                                <p class="status"></p>
+                                <div class="text-center mb-3">
+                                <div class="">
+                                    <div class="text-black fs-5">Kết nối với:</div>
+                                    <div class="wp-social-login-provider-list mt-3">
+                                        <a rel="nofollow" href="#" title="Kết nối với Facebook"  data-provider="Facebook" role="button">
+                                            <span class="px-3 py-2 rounded-3 bg-primary shadow"><i class="fab fa-facebook-f text-light"></i></span>
+                                        </a>
+                                        <a rel="nofollow" href="#" title="Kết nối với Google" data-provider="Google" role="button">
+                                            <span class="px-3 py-2 rounded-3 bg-success shadow mx-3"><i class="fab fa-google text-light"></i></span>
+                                        </a>
+                                        <a rel="nofollow" href="" title="Kết nối với Twitter" data-provider="Twitter" role="button">
+                                            <span class="px-3 py-2 rounded-3 bg-info shadow"><i class="fab fa-twitter text-light"></i></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                </div>
+                                <p class="text-center text-black">hoặc:</p>
+                                <!-- input điền thông tin-->
+								<div class="form-group position-relative">
+                                    <input type="text" id="your_name" class="w-100 ps-2 py-2 rounded-3"/>
+                                    <label class="position-absolute py-1 bg-body" for="your_name">Email hoặc tên người dùng của bạn</label>
+                                </div>
+                                <div class="form-group position-relative my-3">
+                                    <input type="password" id="your_name" class="w-100 ps-2 py-2 rounded-3" />
+                                    <label class="position-absolute py-1 bg-body" for="your_name">Mật khẩu</label>
+                                </div>
+                                <!-- footer form -->
+                                <div class="justify-content-center mb-4">
+                                    <a href="example.com">
+                                        Quên mật khẩu?
+                                    </a>
+                                </div>
+                                <button class="btn btn-primary btn-block mb-4" id="login-up" type="submit" value="LOGIN">
+                                    Đăng nhập
+                                </button>
+                                <!-- Register buttons -->
+                                <div class="text-center">
+                                    <p>Không phải là một thành viên?
+                                        <a href="#exampleModalToggle" role="button" data-bs-toggle="modal" data-auth-modal-tab="sign-up">
+                                            Đăng ký
+                                        </a>
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal" aria-label="Close">
+                            Đóng
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- giỏ hàng -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header border border-bottom-4">
+						<h1 class="modal-title text-center fs-5 fw-bold" id="exampleModalLabel">GIỎ HÀNG</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body p-2">
+						<div class="modal-body-head pb-2 border-bottom ">
+							<p class="m-0">
+								Mua thêm <span class="border border-warning px-1">10.000.000đ</span> để được miễn phí giao hàng trên toàn quốc
+							</p>
+						</div>
+						<div class="modal-body-shopping fs-3 text-center my-5 py-5">
+							Giỏ hàng của bạn còn trống
+						</div>
+						<div class="modal-body-money border-top ">
+							<div class="d-flex justify-content-between align-items-center">
+								<h4 class="m-0 py-2">Tổng cộng: <span class="text-danger">0 VNĐ</span></h4>
+								<a href="ecompark.co" class="fs-6 text-decoration-none text-black-50">
+									Xem chi tiết giỏ hàng
+								</a>
+							</div>
+							<form action="php.co" method="get">
+								<div class="my-2">
+									<label for="message-text" class="col-form-label">Ghi chú:</label>
+									<textarea class="form-control" id="message-text" cols="3"></textarea>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a href="./intropage.html" class="px-4 border btn btn-outline-danger">
+							<span>Liên hệ</span>
+						</a>
+						<a href="#" class="px-3 border btn btn-danger">
+							<span>Thanh toán</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- main -->
+		<div class="main-bannersell">
+			<section id="main-banner-all">
+				<div class="container">
+					<div class="">
+						<h2 class="fw-bold">Tất cả sản phẩm</h2>
+						<p>
+							<a href="./index.html" class="text-black">Trang chủ / </a>
+							<a href="./pagesell.html" class="text-black">Tất cả sản phẩm</a>
+						</p>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="container-fluid my-4 px-0 px-lg-5">
+			<div class="row">
+				<div class="d-none d-lg-block col-lg-3 col-xxl-2 pe-0">
+					<section id="main-head" class="border rounded-3 px-3 bg-body mb-4">
+						<h5 class="text-center py-2 border-bottom">NỔI BẬT</h5>
+						<a href="#" class="d-flex align-items-center py-2">
+							<div class="pe-2">
+								<img src="../file/noithat/searchs/658891.png" alt="thanh vien" width="40px" height="40px" class="rounded-4">
+							</div>
+							<div class="text-black">
+								Ưu đãi thành viên
+							</div>
+						</a>
+						<a href="#" class="d-flex align-items-center py-2">
+							<div class="pe-2">
+								<img src="../file/noithat/searchs/262516.png" alt="gia re" width="35px" height="35px" class="rounded-3">
+							</div>
+							<div class="text-black">
+								Giá rẻ mỗi ngày
+							</div>
+						</a>
+						<a href="#" class="d-flex align-items-center py-2">
+							<div class="pe-2">
+								<img src="../file/noithat/searchs/2315165.png" alt="ma giam ga" width="40px" height="40px" class="rounded-4">
+							</div>
+							<div class="text-black">
+								Mã giảm giá
+							</div>
+						</a>
+						<a href="#" class="d-flex align-items-center py-2">
+							<div class="pe-2">
+								<img src="../file/noithat/searchs/987456.png" alt="xa kho" width="38px" height="38px" class="rounded-4">
+							</div>
+							<div class="text-black">
+								Xả kho
+							</div>
+						</a>
+					</section>
+					<section id="main-category" class="border rounded-3 px-3 bg-body">
+						<h5 class="text-center pt-2">DANH MỤC</h5>
+						<div class="main-category-brand border-top">
+							<h6 class="fw-bold py-2">Thương hiệu sản phẩm</h6>
+							<div class="d-flex align-items-center my-2">
+								<input type="checkbox" name="thuonghieusp" id="thuonghieusp_1" value="vietnam">
+								<label for="thuonghieusp_1" class="px-3">Việt Nam</label>
+							</div>
+							<div class="d-flex align-items-center my-2">
+								<input type="checkbox" name="thuonghieusp" id="thuonghieusp_2" value="trungquoc">
+								<label for="thuonghieusp_2" class="px-3">Trung Quốc</label>
+							</div>
+							<div class="d-flex align-items-center my-2">
+								<input type="checkbox" name="thuonghieusp" id="thuonghieusp_3" value="nhatban">
+								<label for="thuonghieusp_3" class="px-3">Nhật Bản</label>
+							</div>
+							<div class="d-flex align-items-center my-2">
+								<input type="checkbox" name="thuonghieusp" id="thuonghieusp_4" value="khac">
+								<label for="thuonghieusp_4" class="px-3">Khác</label>
+							</div>
+						</div>
+						<div class="main-category-type border-top">
+							<h6 class="fw-bold py-2">Loại sản phẩm</h6>
+							<div class="d-flex align-items-center my-2">
+								<input type="checkbox" name="loaisp" id="loai_1" value="ghe">
+								<label for="loai_1" class="px-3">Ghế</label>
+							</div>
+							<div class="d-flex align-items-center my-2">
+								<input type="checkbox" name="loaisp" id="loai_2" value="ban">
+								<label for="loai_2" class="px-3">Bàn</label>
+							</div>
+							<div class="d-flex align-items-center my-2">
+								<input type="checkbox" name="loaisp" id="loai_3" value="sofa">
+								<label for="loai_3" class="px-3">Sofa</label>
+							</div>
+							<div class="d-flex align-items-center my-2">
+								<input type="checkbox" name="loaisp" id="loai_4" value="keTivi">
+								<label for="loai_4" class="px-3">Kệ Tivi</label>
+							</div>
+							<div class="d-flex align-items-center my-2">
+								<input type="checkbox" name="loaisp" id="loai_5" value="giuongngu">
+								<label for="loai_5" class="px-3">Giường ngủ</label>
+							</div>
+							<div class="d-flex align-items-center my-2">
+								<input type="checkbox" name="loaisp" id="loai_6" value="tuquanao">
+								<label for="loai_6" class="px-3">Tủ quần áo</label>
+							</div>
+							<div class="d-flex align-items-center my-2">
+								<input type="checkbox" name="loaisp" id="loai_7" value="tuke">
+								<label for="loai_7" class="px-3">Tủ, kệ</label>
+							</div>
+							<div class="d-flex align-items-center my-2">
+								<input type="checkbox" name="loaisp" id="loai_8" value="trangtri">
+								<label for="loai_8" class="px-3">Trang trí</label>
+							</div>
+						</div>
+						<div class="main-category-mater border-top">
+							<h6 class="fw-bold py-2">Chất liệu</h6>
+							<div class="d-flex align-items-center my-2">
+								<input type="checkbox" name="chatlieu" id="chatlieu_1" value="go">
+								<label for="chatlieu_1" class="px-3">Gỗ</label>
+							</div>
+							<div class="d-flex align-items-center my-2">
+								<input type="checkbox" name="chatlieu" id="chatlieu_2" value="thep">
+								<label for="chatlieu_2" class="px-3">Thép</label>
+							</div>
+							<div class="d-flex align-items-center my-2">
+								<input type="checkbox" name="chatlieu" id="chatlieu_3" value="caocap">
+								<label for="chatlieu_3" class="px-3">Cao cấp</label>
+							</div>
+							<div class="d-flex align-items-center my-2">
+								<input type="checkbox" name="chatlieu" id="chatlieu_4" value="khac">
+								<label for="chatlieu_4" class="px-3">Khác</label>
+							</div>
+						</div>
+						<div class="main-category-size border-top">
+							<h6 class="fw-bold py-2">Kích thước phòng</h6>
+							<div class="d-flex align-items-center my-2">
+								<input type="checkbox" name="kichthuoc" id="kichthuoc_1" value=" ">
+								<label for="kichthuoc_1" class="px-3">20 m<sup>2</sup></label>
+							</div>
+							<div class="d-flex align-items-center my-2">
+								<input type="checkbox" name="kichthuoc" id="kichthuoc_2" value=" ">
+								<label for="kichthuoc_2" class="px-3">25-35 m<sup>2</sup></label>
+							</div>
+							<div class="d-flex align-items-center my-2">
+								<input type="checkbox" name="kichthuoc" id="kichthuoc_3" value=" ">
+								<label for="kichthuoc_3" class="px-3">35-45 m<sup>2</sup></label>
+							</div>
+							<div class="d-flex align-items-center my-2">
+								<input type="checkbox" name="kichthuoc" id="kichthuoc_4" value=" ">
+								<label for="kichthuoc_4" class="px-3">Trên 45 m<sup>2</sup></label>
+							</div>
+						</div>
+						<div class="main-category-color border-top pb-2">
+							<h6 class="fw-bold py-2">Màu sắc</h6>
+							<div class="d-flex justify-content-around">
+								<button type="button" style="background-color: green;"></button>
+								<button type="button" style="background-color: red;"></button>
+								<button type="button" style="background-color: purple;"></button>
+								<button type="button" style="background-color: black;"></button>
+								<button type="button" style="background-color: yellow;"></button>
+							</div>
+							<div class="d-flex justify-content-around my-2">
+								<button type="button" style="background-color: burlywood;"></button>
+								<button type="button" style="background-color: orange;"></button>
+								<button type="button" style="background-color: palevioletred;"></button>
+								<button type="button" style="background-color: whitesmoke;"></button>
+								<button type="button" style="background-color: blue;"></button>
+							</div>
+						</div>
+						<div class="main-category-price border-top">
+							<h6 class="fw-bold py-2">Giá sản phẩm</h6>
+							<div class="d-flex align-items-center my-2">
+								<input type="checkbox" name="giaban" id="price_1" value="">
+								<label for="price_1" class="px-3 fs-10">Dưới 1,000,000đ</label>
+							</div>
+							<div class="d-flex align-items-center my-2">
+								<input type="checkbox" name="giaban" id="price_2" value="">
+								<label for="price_2" class="px-3 fs-10">1,000,000đ - 3,000,000đ</label>
+							</div>
+							<div class="d-flex align-items-center my-2">
+								<input type="checkbox" name="giaban" id="price_3" value="">
+								<label for="price_3" class="px-3 fs-10">3,000,000đ - 7,000,000đ</label>
+							</div>
+							<div class="d-flex align-items-center my-2">
+								<input type="checkbox" name="giaban" id="price_4" value="">
+								<label for="price_4" class="px-3 fs-10">7,000,000đ - 15,000,000đ</label>
+							</div>
+							<div class="d-flex align-items-center my-2">
+								<input type="checkbox" name="giaban" id="price_5" value="">
+								<label for="price_5" class="px-3 fs-10">Trên 15,000,000đ</label>
+							</div>
+						</div>
+						<div class="main-category-search text-center my-3">
+							<button type="reset" class="px-2 py-1 rounded-2 btn btn-outline-primary">Lọc sản phẩm</button>
+						</div>
+					</section>
+				</div>
+				<div class="col-12 col-lg-9 col-xxl-10">
+					<section id="main-arrange">
+						<div class="main-arrange-head d-flex justify-content-between">
+							<div class="border mx-2">
+								<a href="http://" class="text-decoration-none" role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+									<div class="d-flex align-items-center px-1">
+										<h5 class="fw-bold pe-2 mb-1 text-black">Lọc</h5>
+										<img src="../file/Filter.png" alt="loc san pham">
+									</div>
+								</a>
+							</div>
+							<div class=" px-3">
+								<span class="fw-bold p-3">Sắp xếp theo</span>
+								<select name="gia" id="pricesells" class="px-2 py-1">
+									<option value="">Giá: Tăng dần</option>
+									<option value="">Giá: Giảm dần</option>
+									<option value="">Tên: A-Z</option>
+									<option value="">Tên: Z-A</option>
+									<option value="">Cũ nhất</option>
+									<option value="">Mới nhất</option>
+									<option value="">Bán chạy nhất</option>
+								</select>
+							</div>
+						</div>
+						<div class="main-arrange-body">
+							<div class="main-arrange-item_1">
+								<div class="d-flex flex-wrap justify-content-start align-items-start">
+									<div class="product-item align-self-stretch">
+										<div class="card h-100">
+											<div class="position-relative border-bottom">
+												<a href="./purchasepage.html">
+													<img src="../file/noithat/banchay/mau01.png" class="card-img-top w-100" alt="">
+												</a>
+												<div class="card-off bg-danger text-light position-absolute top-0 end-0 m-2 py-2 px-1 rounded-circle">
+													-15%
+												</div>
+												<div class="d-flex flex-column row-gap-2 button-click justify-content-evenly position-absolute top-0 m-3">
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-regular fa-heart"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-cart-shopping"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</button>
+												</div>
+											</div>
+											<div class="card-body p-2 text-center">
+												<p class="card-text fw-bold my-0 fs-10">Ghế làm việc
+													<span class="px-1 mx-1 border border-danger text-danger">Hot</span>
+												</p>
+												<div class="promotion-sp-price text-danger">680,000đ</div>
+												<div class="promotion-sp-price"><del>800,000đ</del></div>
+											</div>
+										</div>
+									</div>
+									<div class="product-item align-self-stretch">
+										<div class="card h-100">
+											<div class="position-relative border-bottom">
+												<a href="./purchasepage.html">
+													<img src="../file/noithat/banchay/mau02.png" class="card-img-top" alt="">
+												</a>
+												<div class="card-off bg-danger text-light position-absolute top-0 end-0 m-2 py-2 px-1 rounded-circle">
+													-17%
+												</div>
+												<div class="d-flex flex-column row-gap-2 button-click justify-content-evenly position-absolute top-0 m-3">
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-regular fa-heart"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-cart-shopping"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</button>
+												</div>
+											</div>
+											<div class="card-body p-2 text-center">
+												<div class="d-flex flex-wrap justify-content-center">
+													<p class="card-text fw-bold my-0 fs-10">Bàn Gally</p>
+													<span class="px-1 mx-1 border border-danger text-danger">Độc quyền</span>
+												</div>											
+												<div class="promotion-sp-price text-danger">2,200,000đ</div>
+												<div class="promotion-sp-price"><del>2,680.000đ</del></div>
+											</div>
+										</div>
+									</div>
+									<div class="product-item align-self-stretch">
+										<div class="card h-100">
+											<div class="position-relative border-bottom">
+												<a href="./purchasepage.html">
+													<img src="../file/noithat/banchay/mau03.png" class="card-img-top" alt="">
+												</a>
+												<div class="card-off bg-danger text-light position-absolute top-0 end-0 m-2 py-2 px-1 rounded-circle">
+													-10%
+												</div>
+												<div class="d-flex flex-column row-gap-2 button-click justify-content-evenly position-absolute top-0 m-3">
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-regular fa-heart"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-cart-shopping"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</button>
+												</div>
+											</div>
+											<div class="card-body p-2 text-center">
+												<p class="card-text fw-bold my-0 fs-10">Ghế ngồi nghỉ
+													<span class="px-1 mx-1 border border-danger text-danger">Hot</span>
+												</p>
+												<div class="promotion-sp-price text-danger">450,000đ</div>
+												<div class="promotion-sp-price"><del>500,000đ</del></div>
+											</div>
+										</div>
+									</div>
+									<div class="product-item align-self-stretch">
+										<div class="card h-100">
+											<div class="position-relative border-bottom">
+												<a href="./purchasepage.html">
+													<img src="../file/noithat/banchay/mau04.png" class="card-img-top" alt="">
+												</a>
+												<div class="card-off bg-danger text-light position-absolute top-0 end-0 m-2 py-2 px-1 rounded-circle">
+													-10%
+												</div>
+												<div class="d-flex flex-column row-gap-2 button-click justify-content-evenly position-absolute top-0 m-3">
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-regular fa-heart"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-cart-shopping"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</button>
+												</div>
+											</div>
+											<div class="card-body p-2 text-center">
+												<p class="card-text fw-bold my-0 fs-10">Tủ sách G1HKN
+													<span class="px-1 mx-1 border border-danger text-danger">Saleoff</span>
+												</p>
+												<div class="promotion-sp-price text-danger">2,340,000đ</div>
+												<div class="promotion-sp-price"><del>2,600,000đ</del></div>
+											</div>
+										</div>
+									</div>
+									<div class="product-item align-self-stretch">
+										<div class="card h-100">
+											<div class="position-relative border-bottom">
+												<a href="./purchasepage.html">
+													<img src="../file/noithat/banchay/mau05.png" class="card-img-top" alt="">
+												</a>
+												<div class="card-off bg-danger text-light position-absolute top-0 end-0 m-2 py-2 px-1 rounded-circle">
+													-13%
+												</div>
+												<div class="d-flex flex-column row-gap-2 button-click justify-content-evenly position-absolute top-0 m-3">
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-regular fa-heart"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-cart-shopping"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</button>
+												</div>
+											</div>
+											<div class="card-body p-2 text-center">
+												<p class="card-text fw-bold my-0 fs-10">Giường 4 ngăn
+													<span class="px-1 mx-1 border border-danger text-danger">New</span>
+												</p>
+												<div class="promotion-sp-price text-danger">7,700,000đ</div>
+												<div class="promotion-sp-price"><del>10,000,000đ</del></div>
+											</div>
+										</div>
+									</div>
+									<div class="product-item align-self-stretch">
+										<div class="card h-100">
+											<div class="position-relative border-bottom">
+												<a href="./purchasepage.html">
+													<img src="../file/noithat/banchay/mau06.png" class="card-img-top img-fluid" alt="">
+												</a>
+												<div class="card-off bg-danger text-light position-absolute top-0 end-0 m-2 py-2 px-2 rounded-circle">
+													-8%
+												</div>
+												<div class="d-flex flex-column row-gap-2 button-click justify-content-evenly position-absolute top-0 m-3">
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-regular fa-heart"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-cart-shopping"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</button>
+												</div>
+											</div>
+											<div class="card-body p-2 text-center">
+												<p class="card-text fw-bold my-0 fs-10">Đèn ngủ KF2P
+													<span class="px-1 mx-1 border border-danger text-danger">New</span>
+												</p>
+												<div class="promotion-sp-price text-danger">7,700,000đ</div>
+												<div class="promotion-sp-price"><del>10,000,000đ</del></div>
+											</div>
+										</div>
+									</div>
+									<div class="product-item align-self-stretch">
+										<div class="card h-100">
+											<div class="position-relative border-bottom">
+												<a href="./purchasepage.html">
+													<img src="../file/noithat/banchay/mau07.png" class="card-img-top img-fluid" alt="">
+												</a>
+												<div class="card-off bg-danger text-light position-absolute top-0 end-0 m-2 py-2 px-1 rounded-circle">
+													-12%
+												</div>
+												<div class="d-flex flex-column row-gap-2 button-click justify-content-evenly position-absolute top-0 m-3">
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-regular fa-heart"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-cart-shopping"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</button>
+												</div>
+											</div>
+											<div class="card-body p-2 text-center">
+												<p class="card-text fw-bold my-0 fs-10">Sofa da SU2F
+													<span class="px-1 mx-1 border border-danger text-danger">New</span>
+												</p>
+												<div class="promotion-sp-price text-danger">10,560,000đ</div>
+												<div class="promotion-sp-price"><del>12,000,000đ</del></div>
+											</div>
+										</div>
+									</div>
+									<div class="product-item align-self-stretch">
+										<div class="card h-100">
+											<div class="position-relative border-bottom">
+												<a href="./purchasepage.html">
+													<img src="../file/noithat/banchay/mau08.png" class="card-img-top img-fluid" alt="">
+												</a>
+												<div class="card-off bg-danger text-light position-absolute top-0 end-0 m-2 py-2 px-1 rounded-circle">
+													-13%
+												</div>
+												<div class="d-flex flex-column row-gap-2 button-click justify-content-evenly position-absolute top-0 m-3">
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-regular fa-heart"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-cart-shopping"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</button>
+												</div>
+											</div>
+											<div class="card-body p-2 text-center">
+												<p class="card-text fw-bold my-0 fs-10">Sofa da SU2H
+													<span class="px-1 mx-1 border border-danger text-danger">Giá tốt</span>
+												</p>
+												<div class="promotion-sp-price text-danger">5,820,000đ</div>
+												<div class="promotion-sp-price"><del>6,690,000đ</del></div>
+											</div>
+										</div>
+									</div>
+									<div class="product-item align-self-stretch">
+										<div class="card h-100">
+											<div class="position-relative border-bottom">
+												<a href="./purchasepage.html">
+													<img src="../file/noithat/banchay/mau09.png" class="card-img-top img-fluid" alt="">
+												</a>
+												<div class="card-off bg-danger text-light position-absolute top-0 end-0 m-2 py-2 px-2 rounded-circle">
+													-5%
+												</div>
+												<div class="d-flex flex-column row-gap-2 button-click justify-content-evenly position-absolute top-0 m-3">
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-regular fa-heart"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-cart-shopping"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</button>
+												</div>
+											</div>
+											<div class="card-body p-2 text-center">
+												<p class="card-text fw-bold my-0 fs-10">Bàn GENY4F
+													<span class="px-1 mx-1 border border-danger text-danger">Freeship</span>
+												</p>
+												<div class="promotion-sp-price text-danger">1,140,000đ</div>
+												<div class="promotion-sp-price"><del>1,200,000đ</del></div>
+											</div>
+										</div>
+									</div>
+									<div class="product-item align-self-stretch">
+										<div class="card h-100">
+											<div class="position-relative border-bottom">
+												<a href="./purchasepage.html">
+													<img src="../file/noithat/banchay/mau10.png" class="card-img-top img-fluid" alt="">
+												</a>
+												<div class="card-off bg-danger text-light position-absolute top-0 end-0 m-2 py-2 px-2 rounded-circle">
+													-9%
+												</div>
+												<div class="d-flex flex-column row-gap-2 button-click justify-content-evenly position-absolute top-0 m-3">
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-regular fa-heart"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-cart-shopping"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</button>
+												</div>
+											</div>
+											<div class="card-body p-2 text-center">
+												<p class="card-text fw-bold my-0 fs-10">Bàn GENY9F
+													<span class="px-1 mx-1 border border-danger text-danger">Hot</span>
+												</p>
+												<div class="promotion-sp-price text-danger">1,050,000đ</div>
+												<div class="promotion-sp-price"><del>1,490,000đ</del></div>
+											</div>
+										</div>
+									</div>
+									<div class="product-item align-self-stretch">
+										<div class="card h-100">
+											<div class="position-relative border-bottom">
+												<a href="./purchasepage.html">
+													<img src="../file/noithat/banchay/mau09.png" class="card-img-top img-fluid" alt="">
+												</a>
+												<div class="card-off bg-danger text-light position-absolute top-0 end-0 m-2 py-2 px-1 rounded-circle">
+													-20%
+												</div>
+												<div class="d-flex flex-column row-gap-2 button-click justify-content-evenly position-absolute top-0 m-3">
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-regular fa-heart"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-cart-shopping"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</button>
+												</div>
+											</div>
+											<div class="card-body p-2 text-center">
+												<p class="card-text fw-bold my-0 fs-10">Kệ Tivi LK60Z</p>
+												<div class="promotion-sp-price text-danger">3,190,000đ</div>
+												<div class="promotion-sp-price"><del>3,990,000đ</del></div>
+											</div>
+										</div>
+									</div>
+									<div class="product-item align-self-stretch">
+										<div class="card h-100">
+											<div class="position-relative border-bottom">
+												<a href="./purchasepage.html">
+													<img src="../file/noithat/banchay/mau12.png" class="card-img-top img-fluid" alt="">
+												</a>
+												<div class="card-off bg-danger text-light position-absolute top-0 end-0 m-2 py-2 px-1 rounded-circle">
+													-15%
+												</div>
+												<div class="d-flex flex-column row-gap-2 button-click justify-content-evenly position-absolute top-0 m-3">
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-regular fa-heart"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-cart-shopping"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</button>
+												</div>
+											</div>
+											<div class="card-body p-2 text-center">
+												<div class="d-flex flex-wrap justify-content-center">
+													<p class="card-text fw-bold my-0 fs-10">Kệ Tivi LK7NZ</p>
+													<span class="px-1 mx-1 border border-danger text-danger">Giá tốt</span>
+												</div>
+												<div class="promotion-sp-price text-danger">3,140,000đ</div>
+												<div class="promotion-sp-price"><del>3,690,000đ</del></div>
+											</div>
+										</div>
+									</div>
+									<div class="product-item align-self-stretch">
+										<div class="card h-100">
+											<div class="position-relative border-bottom">
+												<a href="./purchasepage.html">
+													<img src="../file/noithat/banchay/mau13.png" class="card-img-top img-fluid" alt="">
+												</a>
+												<div class="card-off bg-danger text-light position-absolute top-0 end-0 m-2 py-2 px-1 rounded-circle">
+													-10%
+												</div>
+												<div class="d-flex flex-column row-gap-2 button-click justify-content-evenly position-absolute top-0 m-3">
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-regular fa-heart"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-cart-shopping"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</button>
+												</div>
+											</div>
+											<div class="card-body p-2 text-center">
+												<p class="card-text fw-bold my-0 fs-10">Tủ QA5HG
+													<span class="px-1 mx-1 border border-danger text-danger">New</span>
+												</p>
+												<div class="promotion-sp-price text-danger">8,550,000đ</div>
+												<div class="promotion-sp-price"><del>9,500,000đ</del></div>
+											</div>
+										</div>
+									</div>
+									<div class="product-item align-self-stretch">
+										<div class="card h-100">
+											<div class="position-relative border-bottom">
+												<a href="./purchasepage.html">
+													<img src="../file/noithat/banchay/mau14.png" class="card-img-top img-fluid" alt="">
+												</a>
+												<div class="card-off bg-danger text-light position-absolute top-0 end-0 m-2 py-2 px-1 rounded-circle">
+													-10%
+												</div>
+												<div class="d-flex flex-column row-gap-2 button-click justify-content-evenly position-absolute top-0 m-3">
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-regular fa-heart"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-cart-shopping"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</button>
+												</div>
+											</div>
+											<div class="card-body p-2 text-center">
+												<p class="card-text fw-bold my-0 fs-10">Tủ QA9HF
+													<span class="px-1 mx-1 border border-danger text-danger">Giá tốt</span>
+												</p>
+												<div class="promotion-sp-price text-danger">7,900,000đ</div>
+												<div class="promotion-sp-price"><del>10,000,000</del></div>
+											</div>
+										</div>
+									</div>
+									<div class="product-item align-self-stretch">
+										<div class="card h-100">
+											<div class="position-relative border-bottom">
+												<a href="./purchasepage.html">
+													<img src="../file/noithat/banchay/mau15.png" class="card-img-top img-fluid" alt="">
+												</a>
+												<div class="card-off bg-danger text-light position-absolute top-0 end-0 m-2 py-2 px-2 rounded-circle">
+													-8%
+												</div>
+												<div class="d-flex flex-column row-gap-2 button-click justify-content-evenly position-absolute top-0 m-3">
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-regular fa-heart"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-cart-shopping"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</button>
+												</div>
+											</div>
+											<div class="card-body p-2 text-center">
+												<p class="card-text fw-bold my-0 fs-10">Tủ HG5QS
+													<span class="px-1 mx-1 border border-danger text-danger">Freeship</span>
+												</p>
+												<div class="promotion-sp-price text-danger">2,650,000đ</div>
+												<div class="promotion-sp-price"><del>2,890,000đ</del></div>
+											</div>
+										</div>
+									</div>
+									<div class="product-item align-self-stretch">
+										<div class="card h-100">
+											<div class="position-relative border-bottom">
+												<a href="./purchasepage.html">
+													<img src="../file/noithat/banchay/mau16.png" class="card-img-top img-fluid" alt="">
+												</a>
+												<div class="card-off bg-danger text-light position-absolute top-0 end-0 m-2 py-2 px-1 rounded-circle">
+													-12%
+												</div>
+												<div class="d-flex flex-column row-gap-2 button-click justify-content-evenly position-absolute top-0 m-3">
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-regular fa-heart"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-cart-shopping"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</button>
+												</div>
+											</div>
+											<div class="card-body p-2 text-center">
+												<p class="card-text fw-bold my-0 fs-10">Tủ rượu HR63O
+													<span class="px-1 mx-1 border border-danger text-danger">Hot</span>
+												</p>
+												<div class="promotion-sp-price text-danger">4,090,000đ</div>
+												<div class="promotion-sp-price"><del>4,650,000đ</del></div>
+											</div>
+										</div>
+									</div>
+									<div class="product-item align-self-stretch">
+										<div class="card h-100">
+											<div class="position-relative border-bottom">
+												<a href="./purchasepage.html">
+													<img src="../file/noithat/banchay/mau17.png" class="card-img-top img-fluid" alt="">
+												</a>
+												<div class="card-off bg-danger text-light position-absolute top-0 end-0 m-2 py-2 px-1 rounded-circle">
+													-10%
+												</div>
+												<div class="d-flex flex-column row-gap-2 button-click justify-content-evenly position-absolute top-0 m-3">
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-regular fa-heart"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-cart-shopping"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</button>
+												</div>
+											</div>
+											<div class="card-body p-2 text-center">
+												<p class="card-text fw-bold my-0 fs-10">Nệm Luxury
+													<span class="px-1 mx-1 border border-danger text-danger">Mua 3 tặng 1</span>
+												</p>
+												<div class="promotion-sp-price text-danger">4,500,000</div>
+												<div class="promotion-sp-price"><del>4,050,000đ</del></div>
+											</div>
+										</div>
+									</div>
+									<div class="product-item align-self-stretch">
+										<div class="card h-100">
+											<div class="position-relative border-bottom">
+												<a href="./purchasepage.html">
+													<img src="../file/noithat/banchay/mau18.png" class="card-img-top img-fluid" alt="">
+												</a>
+												<div class="card-off d-none bg-danger text-light position-absolute top-0 end-0 m-2 py-2 px-1 rounded-circle">
+													-10%
+												</div>
+												<div class="d-flex flex-column row-gap-2 button-click justify-content-evenly position-absolute top-0 m-3">
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-regular fa-heart"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-cart-shopping"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</button>
+												</div>
+											</div>
+											<div class="card-body p-2 text-center">
+												<p class="card-text fw-bold my-0 fs-10">Kệ Hangas
+													<span class="px-1 mx-1 border border-danger text-danger d-none"></span>
+												</p>
+												<div class="promotion-sp-price text-danger mb-4">2,690,000đ</div>
+												<div class="promotion-sp-price visually-hidden"><del>2,690,000đ</del></div>
+											</div>
+										</div>
+									</div>
+									<div class="product-item align-self-stretch">
+										<div class="card h-100">
+											<div class="position-relative border-bottom">
+												<a href="./purchasepage.html">
+													<img src="../file/noithat/banchay/mau19.png" class="card-img-top img-fluid" alt="">
+												</a>
+												<div class="card-off bg-danger text-light position-absolute top-0 end-0 m-2 py-2 px-1 rounded-circle">
+													-14%
+												</div>
+												<div class="d-flex flex-column row-gap-2 button-click justify-content-evenly position-absolute top-0 m-3">
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-regular fa-heart"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-cart-shopping"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</button>
+												</div>
+											</div>
+											<div class="card-body p-2 text-center">
+												<p class="card-text fw-bold my-0 fs-10">Bàn làm việc
+													<span class="px-1 mx-1 border border-danger text-danger">New</span>
+												</p>
+												<div class="promotion-sp-price text-danger">2,060,000đ</div>
+												<div class="promotion-sp-price"><del>2,400,000đ</del></div>
+											</div>
+										</div>
+									</div>
+									<div class="product-item align-self-stretch">
+										<div class="card h-100">
+											<div class="position-relative border-bottom">
+												<a href="./purchasepage.html">
+													<img src="../file/noithat/banchay/mau20.png" class="card-img-top img-fluid" alt="">
+												</a>
+												<div class="card-off bg-danger text-light position-absolute top-0 end-0 m-2 py-2 px-1 rounded-circle">
+													-20%
+												</div>
+												<div class="d-flex flex-column row-gap-2 button-click justify-content-evenly position-absolute top-0 m-3">
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-regular fa-heart"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-cart-shopping"></i>
+													</button>
+													<button type="button" class="button-click-buy btn btn-outline-danger bg-opacity-25">
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</button>
+												</div>
+											</div>
+											<div class="card-body p-2 text-center">
+												<p class="card-text fw-bold my-0 fs-10">Thảm Harmony
+													<span class="px-1 mx-1 border border-danger text-danger">New</span>
+												</p>
+												<div class="promotion-sp-price text-danger">720,000đ</div>
+												<div class="promotion-sp-price"><del>900,000đ</del></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="main-arrange-select my-4">
+								<div class="text-center">
+									<span class="px-2 py-1 border bg-black text-light">1</span>
+									<a href="./pagesell.html">
+										<span class="px-2 py-1 mx-2 border">2</span>
+									</a>
+									<a href="./pagesell.html">
+										<span class="px-2 py-1 border"><i class="fa-solid fa-chevron-right"></i></span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+			<section id="information" class="my-5 bg-body">
+				<div class="informatin-main">
+					<div class="row">
+						<div class="col-6 col-md-3 text-center shadow-sm">
+							<a href="#">
+								<img src="../file/noithat/nen/1111.png" alt="Giao hang">
+							</a>
+							<h6 class="fw-bold m-0 py-2">Giao hàng nhanh, miễn phí</h6>
+							<div class="m-0 fw-6">
+								Đơn hàng > 900k hoặc đăng ký tài khoản được giao hàng miễn phí
+							</div>
+							<a href="#" class="">Xem chi tiết</a>
+						</div>
+						<div class="col-6 col-md-3 text-center shadow-sm">
+							<a href="#">
+								<img src="../file/noithat/nen/2222.png" alt="Giao hang">
+							</a>
+							<h6 class="fw-bold m-0 py-2">Trả hàng, Bảo hành</h6>
+							<div class="m-0">
+								Không thích? Trả lại hoặc đổi hàng của bạn miễn phí trong vòng 30 ngày.
+							</div>
+							<a href="#" class="">Xem chi tiết</a>
+						</div>
+						<div class="col-6 col-md-3 text-center shadow-sm">
+							<a href="#">
+								<img src="../file/noithat/nen/3333.png" alt="Thanh vien">
+							</a>
+							<h6 class="fw-bold m-0 py-2">Thành viên</h6>
+							<p class="m-0">
+								Ưu đã theo từng cấp bậc hạng thành viên. Sinh nhật quà tặng thành viên
+							</p>
+							<a href="#" class="">Xem chi tiết</a>
+						</div>
+						<div class="col-6 col-md-3 text-center shadow-sm">
+							<a href="#">
+								<img src="../file/noithat/nen/4444.png" alt="Giao hang">
+							</a>
+							<h6 class="fw-bold m-0 py-2">Chính hãng</h6>
+							<p class="m-0">
+								Sản phẩm chính hãng. Được nhập khẩu 100% từ hãng.
+							</p>
+							<a href="#" class="">Xem chi tiết</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
+	<footer>
+		<div class="middle-footer py-2 px-3 px-sm-0 px-md-5 px-lg-0">
+			<div class="container-lg">
+				  <div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 footer-click">
+						<div class="foo-contact">
+							<h5 class="border-bottom pb-2">FUINUS HOUSE</h5>
+							<div class="footer-detail rte mb-2">
+							Với kinh nghiệm hơn 10 năm trong ngành nội thất, Finus House
+							tự hào là cung cấp những mẫu sản phẩm nội thất tốt nhất Việt
+							Nam.
+							</div>
+							<ul class="list-type-none list-group">
+								<li>
+								<i class="fa fa-map-marker" aria-hidden="true"></i>
+								<span class="p-2">Số 86 Lê Thanh Nghị, Q.Cầu Giấy, TP. Hà Nội</span>
+								</li>
+								<li>
+								<i class="fa fa-phone" aria-hidden="true"></i>
+								<a href="tel:19006750" title="Điện thoại" class="text-light p-2"> Hottline: 0987.25.63.58</a>
+								</li>
+								<li>
+								<i class="fa fa-envelope" aria-hidden="true"></i>
+								<a href="mailto:support@sapo.vn" title="Email" class="text-light p-2">fustinushouse@yahoo.com</a>
+								</li>
+							</ul>
+							<ul class="social-media d-flex my-3">
+								<li class="rounded-circle text-center bg-primary">
+									<a href="https://www.facebook.com/" title="facebook"
+										class="social-media-icon">
+										<i class="fab fa-facebook-f text-light"></i>
+									</a>
+								</li>
+								<li class="mx-3 rounded-circle text-center bg-info">
+									<a href="https://twitter.com/" title="facebook" class="facebook">
+										<i class="fab fa-twitter text-light"></i>
+									</a>
+								</li>
+								<li class="rounded-circle text-center bg-success">
+									<a href="https://vn.google.com/" title="facebook" class="facebook">
+										<i class="fab fa-google text-light"></i>
+									</a>
+								</li>
+								<li class="mx-3 rounded-circle text-center bg-danger">
+									<a href="https://vn.youtube.com/" title="facebook" class="facebook">
+										<i class="fab fa-youtube text-light"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-12 col-lg-8">
+						  <div class="row">
+							<div class="col-lg-4 col-md-4 col-sm-4 col-6 footer-click">
+								  <h5 class="border-bottom pb-2 ">DANH MỤC</h5>
+								  <ul class="toggle-mn list-group">
+									<li>
+										  <a class="ef" href="./index.html" title="Trang chủ">Trang chủ</a>
+									</li>
+									<li>
+										  <a class="ef" href="./intropage.html" title="Giới thiệu">Giới thiệu</a>
+									</li>	
+									<li>
+										  <a class="ef" href="./pagesell.html" title="Sản phẩm">Sản phẩm</a>
+									</li>	
+									<li>
+										  <a class="ef" href="/tin-tuc" title="Tin tức">Tin tức</a>
+									</li>
+									<li>
+										  <a class="ef" href="./contact.html" title="Liên hệ">Liên hệ</a>
+									</li>
+								  </ul>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-6 footer-click">
+								  <h5 class="border-bottom pb-2">THÔNG TIN</h5>
+								  <ul class="toggle-mn list-group">
+									<li>
+										  <a class="ef" href="./pagesell.html" title="Tủ rượu">Tất cả sản phẩm</a>
+									</li>
+									<li>
+										<a class="ef" href="/" title="Giường">Nội thất phòng khách</a>
+									  </li>
+									<li>
+										<a class="ef" href="/" title="Sofa Bộ">Nội thất phòng ngủ</a>
+									</li>
+									<li>
+										<a class="ef" href="/" title="Sofa Góc, Sofa Băng">Nội thất phòng bếp</a>
+									</li>
+									<li>
+										<a class="ef" href="/" title="Kệ Tivi">Nội thất thông minh</a>
+									</li>									
+								  </ul>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 footer-click">
+								<h5 class="border-bottom pb-2 mt-3 mt-sm-0">CHÍNH SÁCH</h5>
+								<ul class="toggle-mn list-group">
+									<li>
+										<a class="ef" href="/" title="thanh toán">Chính sách thanh toán</a>
+									</li>
+									<li>
+										<a class="ef" href="/" title="vận chuyển">Chính sách vận chuyển</a>
+									</li>
+									<li>
+										<a class="ef" href="/" title="bảo hành">Chính sách bảo hành</a>
+									</li>
+									<li>
+										<a class="ef" href="/" title="đổi trả">Chính sách đổi trả</a>
+									</li>
+									<li>
+										<a class="ef" href="/" title="bảo mật">Chính sách bảo mật</a>
+									</li>
+								</ul>
+							  </div>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mt-3 mt-sm-4 footer-click payment">
+								<h5 class="cliked">Thanh toán</h5>
+								<ul class="toggle-mn d-flex ps-0">
+									<li>
+										<a href="#" title="ND Nội Thất">
+											<img
+											class="lazy img-responsive center-block loaded"
+											src="//bizweb.dktcdn.net/100/369/704/themes/741072/assets/image_payment_1.jpg?1677115735837"
+											data-src="//bizweb.dktcdn.net/100/369/704/themes/741072/assets/image_payment_1.jpg?1677115735837"
+											alt="ND Nội Thất">
+										</a>
+									</li>	
+									<li class="mx-2">
+										<a href="#" title="ND Nội Thất">
+										<img
+											class="lazy img-responsive center-block loaded"
+											src="//bizweb.dktcdn.net/100/369/704/themes/741072/assets/image_payment_2.jpg?1677115735837"
+											data-src="//bizweb.dktcdn.net/100/369/704/themes/741072/assets/image_payment_2.jpg?1677115735837"
+											alt="ND Nội Thất"/>
+										</a>
+									</li>	
+									<li>
+										<a href="#" title="ND Nội Thất">
+											<img
+											class="lazy img-responsive center-block loaded"
+											src="//bizweb.dktcdn.net/100/369/704/themes/741072/assets/image_payment_3.jpg?1677115735837"
+											data-src="//bizweb.dktcdn.net/100/369/704/themes/741072/assets/image_payment_3.jpg?1677115735837"
+											alt="ND Nội Thất"/>
+										</a>
+									</li>	
+									<li class="mx-2">
+										<a href="#" title="ND Nội Thất">
+											<img
+											class="lazy img-responsive center-block loaded"
+											src="//bizweb.dktcdn.net/100/369/704/themes/741072/assets/image_payment_4.jpg?1677115735837"
+											data-src="//bizweb.dktcdn.net/100/369/704/themes/741072/assets/image_payment_4.jpg?1677115735837"
+											alt="ND Nội Thất"/>
+										</a>
+									</li>	
+									<li>
+										<a href="#" title="ND Nội Thất">
+											<img
+											class="lazy img-responsive center-block loaded"
+											src="//bizweb.dktcdn.net/100/369/704/themes/741072/assets/image_payment_5.jpg?1677115735837"
+											data-src="//bizweb.dktcdn.net/100/369/704/themes/741072/assets/image_payment_5.jpg?1677115735837"
+											alt="ND Nội Thất"/>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 my-3 mt-sm-4 footer-click customer">
+								<h5 class="cliked">Đăng ký nhận tin</h5>			  
+								<form action="https://sapo.co" method="post"
+									id="mc-embedded-subscribe-form"
+									name="mc-embedded-subscribe-form"
+									target="_blank">
+									<div class="input-group click-register">
+											<input type="email"	name="EMAIL" id="mail"	
+											placeholder="Nhập email của bạn..."	
+											aria-label="general.newsletter_form.newsletter_email"
+											  required="" class="form-control"/>
+											<button class="button-submit text-light rounded-end-2 px-3 border-0" value="Đăng ký" type="submit">Đăng ký</button>
+									</div>	
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
